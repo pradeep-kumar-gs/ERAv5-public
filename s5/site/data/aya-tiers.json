@@ -1,0 +1,286 @@
+{
+  "generated_at": "2026-07-31T06:25:41.734707+00:00",
+  "status": "measured",
+  "purpose": "Tiers S4's existing Aya sample into verified/unverified/translated/synthetic for the S5 Indic mixture spec.",
+  "dataset": "CohereLabs/aya_collection_language_split",
+  "revision": "a3af2fde4b4cb5b2775830b11244a1a20b5f004f",
+  "license": "Apache-2.0",
+  "tokenizer": "cl100k_base",
+  "runtime": {
+    "python": "3.13.14",
+    "pyarrow": "25.0.0",
+    "tiktoken": "0.13.0"
+  },
+  "sampling": "Identical two-pass deterministic SHA-256 rank sample S4 used (same target, same revision) -- this is a re-tiering of S4's sample, not a new sample.",
+  "tier_definition": {
+    "verified": "dataset_name == 'Aya-Dataset' (human-annotated by native-speaker volunteers, Singh et al. 2024 arXiv:2402.06619)",
+    "translated": "dataset_name ends with '(T)' (machine/pipeline-translated from English source corpora)",
+    "unverified": "everything else -- native-language web/templated content with no human quality-verification label",
+    "synthetic": "no synthetic-labeled rows exist in this Aya split; always 0 here by direct inspection"
+  },
+  "target_tokens_per_language": 10000000,
+  "tier_tokens_total": {
+    "verified": 89605,
+    "unverified": 4813754,
+    "translated": 45096499,
+    "synthetic": 0
+  },
+  "languages": [
+    {
+      "code": "hin",
+      "name": "Hindi",
+      "selected_tokens_total": 9999990,
+      "selected_rows_total": 18493,
+      "tier_tokens": {
+        "verified": 1886,
+        "unverified": 2661544,
+        "translated": 7336560,
+        "synthetic": 0
+      },
+      "tier_rows": {
+        "verified": 4,
+        "unverified": 1018,
+        "translated": 17471,
+        "synthetic": 0
+      },
+      "tier_top_sources": {
+        "verified": {
+          "Aya-Dataset": 4
+        },
+        "unverified": {
+          "Hindi-article-generation": 492,
+          "Mintaka-inst": 281,
+          "Hindi-article-summarization": 215,
+          "Xlel_wd-inst": 20,
+          "IndicXParaphrase-inst": 5
+        },
+        "translated": {
+          "SODA-inst (T)": 5803,
+          "Wiki-split-inst (T)": 4897,
+          "Xlel_wd-inst (T)": 2555,
+          "HotpotQA (T)": 1785,
+          "NQ-Open (T)": 851
+        }
+      },
+      "sample_manifest_sha256": "ad0f0ee84cdf9752b944db5cf6d31eeb3bc801889615effc403102d56363888f",
+      "input_files": [
+        {
+          "name": "train-00000-of-00003.parquet",
+          "sha256": "cc06e6cb83bce09b9d4b73afe5f5b7c8b20f3c10af72f0044a0f610534aa6500"
+        },
+        {
+          "name": "train-00001-of-00003.parquet",
+          "sha256": "70eafc9ccefd124018ca4c6f94eec0dc222f98e5441048a0b9e0e78ba8338c8b"
+        },
+        {
+          "name": "train-00002-of-00003.parquet",
+          "sha256": "5d603e02d5116df3fc8ce1ca1e40ccf5ce0e2a719a99ff9f1802bcc501f85b61"
+        }
+      ]
+    },
+    {
+      "code": "tam",
+      "name": "Tamil",
+      "selected_tokens_total": 9999990,
+      "selected_rows_total": 16269,
+      "tier_tokens": {
+        "verified": 51625,
+        "unverified": 61239,
+        "translated": 9887126,
+        "synthetic": 0
+      },
+      "tier_rows": {
+        "verified": 59,
+        "unverified": 64,
+        "translated": 16146,
+        "synthetic": 0
+      },
+      "tier_top_sources": {
+        "verified": {
+          "Aya-Dataset": 59
+        },
+        "unverified": {
+          "Thirukkural-instruct": 33,
+          "Xlel_wd-inst": 17,
+          "IndicSentiment-inst": 9,
+          "TamilStories": 5
+        },
+        "translated": {
+          "SODA-inst (T)": 5372,
+          "Wiki-split-inst (T)": 4492,
+          "Xlel_wd-inst (T)": 2353,
+          "HotpotQA (T)": 1614,
+          "NQ-Open (T)": 788
+        }
+      },
+      "sample_manifest_sha256": "fd7a186ff6edce57857aeb1744121a46837747af42108eccf6d4e64471e8f9c1",
+      "input_files": [
+        {
+          "name": "train-00000-of-00003.parquet",
+          "sha256": "bb29c7a4b605fb98eb3ac96b7b5a0636a771b5abd833dce59fbdd621e6d64775"
+        },
+        {
+          "name": "train-00001-of-00003.parquet",
+          "sha256": "7a489884df5cadf39d1196ba1c9b0e0c34ffe8e7894228568856d560d3e448fe"
+        },
+        {
+          "name": "train-00002-of-00003.parquet",
+          "sha256": "2320ec838eee279b48ccb2c2b1faccff854899bd12c5b37d6f084c1918fdfac2"
+        }
+      ]
+    },
+    {
+      "code": "tel",
+      "name": "Telugu",
+      "selected_tokens_total": 9999983,
+      "selected_rows_total": 12264,
+      "tier_tokens": {
+        "verified": 32343,
+        "unverified": 2076456,
+        "translated": 7891184,
+        "synthetic": 0
+      },
+      "tier_rows": {
+        "verified": 23,
+        "unverified": 1380,
+        "translated": 10861,
+        "synthetic": 0
+      },
+      "tier_top_sources": {
+        "verified": {
+          "Aya-Dataset": 23
+        },
+        "unverified": {
+          "Telugu-news-articles": 1346,
+          "Telugu-poems": 16,
+          "IndicXParaphrase-inst": 7,
+          "Xlel_wd-inst": 4,
+          "IndicSentiment-inst": 2
+        },
+        "translated": {
+          "SODA-inst (T)": 3690,
+          "Wiki-split-inst (T)": 3000,
+          "Xlel_wd-inst (T)": 1533,
+          "HotpotQA (T)": 1018,
+          "NQ-Open (T)": 565
+        }
+      },
+      "sample_manifest_sha256": "64ccc0c2d68071bac9d5628b8483ea76b2966e118996e622a6ecf5d5537e539c",
+      "input_files": [
+        {
+          "name": "train-00000-of-00003.parquet",
+          "sha256": "b59feaf79c7773ea89ed9c93c5f54b6a3ced0d95df039828a20a5ec59ec421a2"
+        },
+        {
+          "name": "train-00001-of-00003.parquet",
+          "sha256": "5996e5dda12a997014139583bec3d1d6ca0028aff0b823e953ecfb4bb0ba2eeb"
+        },
+        {
+          "name": "train-00002-of-00003.parquet",
+          "sha256": "4e428b514469c8ba2c22f923f5d263fe43f4dcabe775f74ea659074642ae96b5"
+        }
+      ]
+    },
+    {
+      "code": "kan",
+      "name": "Kannada",
+      "selected_tokens_total": 9999966,
+      "selected_rows_total": 13120,
+      "tier_tokens": {
+        "verified": 0,
+        "unverified": 2171,
+        "translated": 9997795,
+        "synthetic": 0
+      },
+      "tier_rows": {
+        "verified": 0,
+        "unverified": 6,
+        "translated": 13114,
+        "synthetic": 0
+      },
+      "tier_top_sources": {
+        "verified": {},
+        "unverified": {
+          "IndicSentiment-inst": 6
+        },
+        "translated": {
+          "SODA-inst (T)": 4401,
+          "Wiki-split-inst (T)": 3598,
+          "Xlel_wd-inst (T)": 1931,
+          "HotpotQA (T)": 1317,
+          "NQ-Open (T)": 626
+        }
+      },
+      "sample_manifest_sha256": "3db0ffe88c95531deadc98eda8bab59aedd54baa018a594a5d49d6e14dd17b0b",
+      "input_files": [
+        {
+          "name": "train-00000-of-00003.parquet",
+          "sha256": "52bee1255f277f06d1598841b9a26df3d7fea97e308a7291e89de46870527650"
+        },
+        {
+          "name": "train-00001-of-00003.parquet",
+          "sha256": "11cffd9fec8241fa21f974f86b3877e1c892bc5dc29b4ad8676033f420af6951"
+        },
+        {
+          "name": "train-00002-of-00003.parquet",
+          "sha256": "151be10d77a9b0bded59e393895fb2c0cbe67dfe8eb09b79090bf1596c95e27f"
+        }
+      ]
+    },
+    {
+      "code": "mal",
+      "name": "Malayalam",
+      "selected_tokens_total": 9999929,
+      "selected_rows_total": 14176,
+      "tier_tokens": {
+        "verified": 3751,
+        "unverified": 12344,
+        "translated": 9983834,
+        "synthetic": 0
+      },
+      "tier_rows": {
+        "verified": 6,
+        "unverified": 20,
+        "translated": 14150,
+        "synthetic": 0
+      },
+      "tier_top_sources": {
+        "verified": {
+          "Aya-Dataset": 6
+        },
+        "unverified": {
+          "Xlel_wd-inst": 10,
+          "IndicSentiment-inst": 9,
+          "IndicXParaphrase-inst": 1
+        },
+        "translated": {
+          "SODA-inst (T)": 4765,
+          "Wiki-split-inst (T)": 3875,
+          "Xlel_wd-inst (T)": 2049,
+          "HotpotQA (T)": 1453,
+          "NQ-Open (T)": 692
+        }
+      },
+      "sample_manifest_sha256": "cc34ea9b79a3b8e6377d6119ff953fa867e518b4a136cb55269f5a7fd8137ba9",
+      "input_files": [
+        {
+          "name": "train-00000-of-00003.parquet",
+          "sha256": "794d2ad435b6ca078bf13b440ff42033996388506717fe6f51da0ef9ac979d68"
+        },
+        {
+          "name": "train-00001-of-00003.parquet",
+          "sha256": "e4578aa61958f3bf9fe2a59e4a5f1329cd90632a4a688db41029efabe350a572"
+        },
+        {
+          "name": "train-00002-of-00003.parquet",
+          "sha256": "70389e9d84d4c740e11772a4c21db570e9e0634da01a1ab6ab65a0ce83740664"
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "This tiers S4's already-selected sample; it does not re-derive available_tokens per tier for the full Aya corpus.",
+    "'Verified' here means human-annotated per the Aya paper's own methodology, not independently re-reviewed by this project.",
+    "Aya's schema has no synthetic-content label; the synthetic tier for the Indic overlay must come from a different source (see audit_sangraha.py)."
+  ]
+}

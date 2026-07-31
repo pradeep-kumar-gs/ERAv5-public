@@ -1,0 +1,66 @@
+{
+  "seed": 1337,
+  "tokenizer": "gpt2 (tiktoken)",
+  "vocab_size": 50257,
+  "chunk_size": 256,
+  "train_budget_tokens": 900000,
+  "val_budget_tokens": 100000,
+  "lane_pool_counts": {
+    "indic_records": {
+      "train": 2248,
+      "val": 249
+    },
+    "agentic_records": {
+      "train": 3904,
+      "val": 433
+    },
+    "reasoning_records": {
+      "train": 5400,
+      "val": 600,
+      "band3_withheld": 10045
+    },
+    "longcontext_records": {
+      "train": 8896,
+      "val": 988,
+      "long_withheld": 2116
+    }
+  },
+  "hypotheses": {
+    "A": {
+      "path": "s5/data/proxy/train_A.bin",
+      "tokens": 899328,
+      "weights": {
+        "indic": 0.8333333333333334,
+        "agentic": 0.10416666666666667,
+        "reasoning": 0.03125,
+        "longcontext": 0.03125
+      },
+      "curriculum_ordered": false
+    },
+    "B": {
+      "path": "s5/data/proxy/train_B.bin",
+      "tokens": 899328,
+      "weights": {
+        "indic": 0.8620689655172413,
+        "agentic": 0.08620689655172414,
+        "reasoning": 0.02586206896551724,
+        "longcontext": 0.02586206896551724
+      },
+      "curriculum_ordered": false
+    },
+    "C": {
+      "path": "s5/data/proxy/train_C.bin",
+      "tokens": 899328,
+      "weights": {
+        "indic": 0.8333333333333334,
+        "agentic": 0.10416666666666667,
+        "reasoning": 0.03125,
+        "longcontext": 0.03125
+      },
+      "curriculum_ordered": true
+    }
+  },
+  "val_shared_tokens": 99999,
+  "heldout_complex_tokens": 139198092,
+  "heldout_complex_composition": "Bespoke-Stratos-17k records with thought-span >=2000 tokens (Band 3, D33) + LongAlpaca-12k documents >=16000 tokens (D31) -- never included in any hypothesis's training stream."
+}

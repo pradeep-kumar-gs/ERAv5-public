@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-31T06:26:04.585140+00:00",
+  "status": "measured-spot-sample",
+  "purpose": "Spot-samples ai4bharat/sangraha's Hindi verified/unverified/synthetic tiers to give the S5 Indic mixture spec at least one independently measured verified/synthetic data point, since S3 only ever cited Sangraha's headline arXiv numbers.",
+  "dataset": "ai4bharat/sangraha",
+  "citation": "Khan et al. 2024, arXiv:2403.06350",
+  "scope": "Hindi only, shard 0 of each tier only -- NOT the full corpus. Every other language and every other shard remains a CITED (not measured) number from S3, taken from the paper's headline split (64.306B verified / 24.308B unverified / 162.708B synthetic across 22 languages; Hindi verified cited at 12.617B).",
+  "tokenizer": "cl100k_base",
+  "runtime": {
+    "python": "3.13.14",
+    "pyarrow": "25.0.0",
+    "tiktoken": "0.13.0"
+  },
+  "target_tokens_per_tier": 2000000,
+  "tiers": {
+    "verified": {
+      "tier": "verified",
+      "shard_file": "data-0.parquet",
+      "shard_available_tokens": 375649460,
+      "shard_available_rows": 174763,
+      "selected_tokens": 1999983,
+      "selected_rows": 942,
+      "exact_duplicate_rows": 8,
+      "pii_hits": {
+        "email": 1,
+        "phone": 4
+      },
+      "sample_manifest_sha256": "b525d80927d25857eea31f9f5b24fb93afe95bd7d34fe1de0c4e826abc71beb8",
+      "shard_sha256": "001c615cca156edb0f99e7bdeabfa33fa6135f85d379b85999d8e071e3475d85"
+    },
+    "unverified": {
+      "tier": "unverified",
+      "shard_file": "data-0.parquet",
+      "shard_available_tokens": 377165344,
+      "shard_available_rows": 149796,
+      "selected_tokens": 1999803,
+      "selected_rows": 760,
+      "exact_duplicate_rows": 0,
+      "pii_hits": {
+        "email": 2,
+        "phone": 2
+      },
+      "sample_manifest_sha256": "44482c05f9513150bfbffbccb7f37069e7eee510ce48c7a209dbeb6b75768ae3",
+      "shard_sha256": "3d2d2100eb8ac4e94905fbb8d7e30539d63ab39c0760c59cbdcca429fb56443c"
+    },
+    "synthetic": {
+      "tier": "synthetic",
+      "shard_file": "wiki_hin_Deva_0000_of_0063.parquet",
+      "shard_available_tokens": 257987777,
+      "shard_available_rows": 90237,
+      "selected_tokens": 1999990,
+      "selected_rows": 645,
+      "exact_duplicate_rows": 0,
+      "pii_hits": {
+        "email": 0,
+        "phone": 0
+      },
+      "sample_manifest_sha256": "e251597eb4042471046ed00f440d8e1680a94312e5f93ec00d56dd7fe2f4a42f",
+      "shard_sha256": "40eee3b27477ec1925edcb5526ba42b4b03d8378770132b8a1db39d87c136aaa"
+    }
+  },
+  "caveats": [
+    "This is a single-shard spot-sample per tier, not a full-corpus audit -- do not extrapolate shard-level ratios to the full 12.6B-token verified corpus without a wider sample.",
+    "Sangraha's 'verified' label reflects the dataset authors' own source-curation methodology (see paper), not independent re-review by this project.",
+    "'type' column present in the verified shard was not used for further sub-tiering here; left for future work."
+  ]
+}

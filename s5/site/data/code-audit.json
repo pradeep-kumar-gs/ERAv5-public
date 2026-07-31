@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-07-31T08:01:34.293970+00:00",
+  "status": "measured-spot-sample",
+  "purpose": "Gives the Code lane (D36's zero-supply admission) its first real, measured data point: a single-shard spot-sample of codeparrot/github-code-clean, restricted to permissively licensed files, with the shard's overall permissive-license fraction reported for extrapolation.",
+  "dataset": "codeparrot/github-code-clean",
+  "upstream_source": "codeparrot/github-code (BigQuery GitHub public dataset export, query executed 2022-03-16), quality-filtered by CodeParrot",
+  "license_note": "Each row carries the license of its origin GitHub repository (dataset's own 'license' column). This audit reports figures for the permissive allowlist only (['apache-2.0', 'bsd-2-clause', 'bsd-3-clause', 'cc0-1.0', 'isc', 'mit', 'unlicense']); copyleft licenses (gpl-2.0/3.0, agpl-3.0, lgpl-2.1/3.0) and ambiguous ones (mpl-2.0, epl-1.0, artistic-2.0) are measured but excluded from the sampled/selected figures below.",
+  "scope": "Single shard (train-00000-of-00880.parquet) out of 883 -- NOT the full corpus. This shard's license mix is reported as the basis for any full-corpus extrapolation; do not assume it is representative without a wider multi-shard sample.",
+  "tokenizer": "cl100k_base",
+  "runtime": {
+    "python": "3.13.14",
+    "pyarrow": "25.0.0",
+    "tiktoken": "0.13.0"
+  },
+  "target_tokens": 2000000,
+  "shard_file": "data/train-00000-of-00880.parquet",
+  "shard_sha256": "c05e4cad93aac3f978a2385f8c055a10d247b107afd8bf9cb8c762f8403bdc0f",
+  "shard_stats": {
+    "total_rows": 126925,
+    "total_tokens": 270601959,
+    "permissive_rows": 81693,
+    "permissive_tokens": 142871195,
+    "license_counts": {
+      "mit": 43942,
+      "apache-2.0": 27186,
+      "gpl-2.0": 18790,
+      "gpl-3.0": 15536,
+      "bsd-3-clause": 7121,
+      "agpl-3.0": 3638,
+      "lgpl-3.0": 2640,
+      "lgpl-2.1": 2262,
+      "bsd-2-clause": 1816,
+      "mpl-2.0": 1241,
+      "epl-1.0": 1022,
+      "unlicense": 831,
+      "cc0-1.0": 413,
+      "isc": 384,
+      "artistic-2.0": 103
+    },
+    "language_counts": {
+      "Java": 21517,
+      "C": 15869,
+      "PHP": 12868,
+      "JavaScript": 12315,
+      "HTML": 12130,
+      "Markdown": 9194,
+      "C++": 8386,
+      "Python": 8028,
+      "C#": 7434,
+      "Ruby": 5011
+    },
+    "permissive_language_counts": {
+      "Java": 14344,
+      "JavaScript": 9780,
+      "HTML": 8535,
+      "Markdown": 7872,
+      "PHP": 6660,
+      "C": 6189,
+      "C#": 5559,
+      "Python": 5053,
+      "Ruby": 4172,
+      "C++": 3918
+    }
+  },
+  "permissive_fraction_of_shard_tokens": 0.528,
+  "full_corpus_extrapolation": {
+    "method": "shard_stats value x 883 (total shards in codeparrot/github-code-clean's data/ directory), assuming roughly uniform rows-per-shard -- a single-shard order-of-magnitude estimate, not a measurement.",
+    "total_shards": 883,
+    "estimated_total_rows": 112074775,
+    "estimated_total_tokens": 238941529797,
+    "estimated_permissive_tokens": 126155265185,
+    "consistency_check": "Estimated total rows can be cross-checked against the dataset card's own arithmetic: codeparrot/github-code cites 115M files, github-code-clean's README states 3.39M files (2.94%) were removed by quality filtering, i.e. ~111.6M files expected -- compare against estimated_total_rows above."
+  },
+  "sample": {
+    "selected_tokens": 1999991,
+    "selected_rows": 1086,
+    "selected_language_counts": {
+      "Java": 177,
+      "JavaScript": 128,
+      "Markdown": 122,
+      "HTML": 114,
+      "PHP": 92,
+      "Python": 86,
+      "C": 68,
+      "C#": 67,
+      "Ruby": 59,
+      "C++": 43,
+      "GO": 22,
+      "CSS": 20,
+      "Shell": 16,
+      "TypeScript": 16,
+      "Scala": 10,
+      "SQL": 8,
+      "Batchfile": 5,
+      "CMake": 5,
+      "Lua": 5,
+      "Rust": 4,
+      "Perl": 3,
+      "TeX": 3,
+      "Haskell": 3,
+      "Dockerfile": 2,
+      "Visual Basic": 2,
+      "Makefile": 2,
+      "Assembly": 1,
+      "Julia": 1,
+      "PowerShell": 1,
+      "FORTRAN": 1
+    },
+    "exact_duplicate_rows": 0,
+    "pii_or_secret_hits": {
+      "email": 193,
+      "secret_like_assignment": 3
+    },
+    "sample_manifest_sha256": "a897baa70987ec68cc67c328836c6cce9f65795d5ebb670f3982f9aab44b76ce"
+  },
+  "caveats": [
+    "This is a single-shard spot-sample, not a full-corpus audit -- do not extrapolate this shard's 52.8% permissive-token fraction to the full ~847GB corpus without a wider sample across languages and shard-export dates.",
+    "License is inherited from the origin repository at BigQuery export time (2022); it is not re-verified per-file and may be stale relative to the repository's current license.",
+    "Secret/PII scrubbing here is a coarse regex heuristic, not a production-grade secret scanner -- flagged as 'audit' status, same as every other S5 lane's pii stage.",
+    "Tokenized with cl100k_base for cross-lane audit comparability; a real Code-lane pretraining run would use a code-aware tokenizer (e.g. StarCoder's BPE), not this one."
+  ]
+}

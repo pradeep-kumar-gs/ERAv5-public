@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-07-31T06:30:44.119107+00:00",
+  "manifest": {
+    "dataset": "Yukang/LongAlpaca-12k",
+    "revision": "main",
+    "source_sha256": "090b348755c728cfb4b13fa443b54a0cb4e5128a92f142c6a52c5b4ff0f55e1f",
+    "tokenizer": "cl100k_base",
+    "license": "CC BY-NC 4.0 (data; code is Apache-2.0) -- non-commercial, flagged"
+  },
+  "raw": {
+    "records": 12000,
+    "tokens": 112352280,
+    "mean_tokens_per_record": 9358.62,
+    "median_tokens_per_record": 7745.0,
+    "p95_tokens_per_record": 25205,
+    "max_tokens_per_record": 70748
+  },
+  "stages": [
+    {
+      "id": "normalize",
+      "name": "Unicode & text normalization",
+      "input_tokens": 112352280,
+      "output_tokens": 112303398,
+      "findings": {
+        "control_or_format_chars_removed": 8403
+      }
+    },
+    {
+      "id": "format",
+      "name": "Canonical conversation formatting",
+      "input_records": 12000,
+      "output_records": 12000,
+      "findings": {
+        "note": "Single-turn or role-tagged records reformatted to a uniform schema at load time."
+      }
+    },
+    {
+      "id": "language",
+      "name": "Language & script validation",
+      "input_records": 12000,
+      "output_records": 12000,
+      "findings": {
+        "records_below_50pct_ascii_script_ratio": 0
+      },
+      "note": "Expected language: English."
+    },
+    {
+      "id": "heuristic",
+      "name": "Heuristic quality filtering",
+      "input_records": 12000,
+      "output_records": 6916,
+      "findings": {
+        "empty": 0,
+        "over_8192_tokens": 5084
+      }
+    },
+    {
+      "id": "classifier",
+      "name": "Quality-score gate",
+      "status": "planned",
+      "findings": {},
+      "note": "Same status as S4: threshold requires calibration, not yet executed."
+    },
+    {
+      "id": "dedup",
+      "name": "Exact & near deduplication",
+      "input_records": 12000,
+      "output_records": 11964,
+      "findings": {
+        "exact_duplicate_records": 36
+      }
+    },
+    {
+      "id": "pii",
+      "name": "PII & secret scrubbing",
+      "status": "audit",
+      "findings": {
+        "email": 323,
+        "phone_india": 94,
+        "ipv4": 4380,
+        "url": 1109
+      }
+    },
+    {
+      "id": "contamination",
+      "name": "Benchmark decontamination",
+      "status": "blocked",
+      "findings": {},
+      "note": "Same status as S4: a sealed benchmark fingerprint set is required before claiming a pass."
+    },
+    {
+      "id": "manifest",
+      "name": "Deterministic provenance manifest",
+      "status": "complete",
+      "findings": {
+        "source_sha256": "090b348755c728cfb4b13fa443b54a0cb4e5128a92f142c6a52c5b4ff0f55e1f",
+        "revision": "main"
+      }
+    }
+  ],
+  "extra": {
+    "role": "long-context lane candidate (D8 staged-extension precedent)",
+    "context_length_histogram_tokens": {
+      "0-2000": 3118,
+      "2000-8000": 3417,
+      "8000-16000": 3464,
+      "16000-32000": 1979,
+      "32000-64000": 18,
+      "64000-1000000": 4
+    },
+    "licence_warning": "Data licence is CC BY-NC 4.0 (non-commercial); code licence (Apache-2.0) does not extend to the data. A real production pretraining run would need a licence carve-out or a commercially licensed substitute."
+  }
+}

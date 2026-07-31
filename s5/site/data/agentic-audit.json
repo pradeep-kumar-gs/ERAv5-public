@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-07-31T06:26:47.993674+00:00",
+  "manifest": {
+    "dataset": "glaiveai/glaive-function-calling-v2",
+    "revision": "main",
+    "source_sha256": "e9b5d671812b5ca2fbd7b625a37d5c99a19576c37252cdc806defe256aea6dad",
+    "tokenizer": "cl100k_base",
+    "license": "Apache-2.0"
+  },
+  "raw": {
+    "records": 112960,
+    "tokens": 56115280,
+    "mean_tokens_per_record": 496.37,
+    "median_tokens_per_record": 395.0,
+    "p95_tokens_per_record": 1167,
+    "max_tokens_per_record": 4083
+  },
+  "stages": [
+    {
+      "id": "normalize",
+      "name": "Unicode & text normalization",
+      "input_tokens": 56115280,
+      "output_tokens": 56070241,
+      "findings": {
+        "control_or_format_chars_removed": 31
+      }
+    },
+    {
+      "id": "format",
+      "name": "Canonical conversation formatting",
+      "input_records": 112960,
+      "output_records": 112960,
+      "findings": {
+        "note": "Single-turn or role-tagged records reformatted to a uniform schema at load time."
+      }
+    },
+    {
+      "id": "language",
+      "name": "Language & script validation",
+      "input_records": 112960,
+      "output_records": 112960,
+      "findings": {
+        "records_below_50pct_ascii_script_ratio": 0
+      },
+      "note": "Expected language: English."
+    },
+    {
+      "id": "heuristic",
+      "name": "Heuristic quality filtering",
+      "input_records": 112960,
+      "output_records": 112960,
+      "findings": {
+        "empty": 0,
+        "over_8192_tokens": 0
+      }
+    },
+    {
+      "id": "classifier",
+      "name": "Quality-score gate",
+      "status": "planned",
+      "findings": {},
+      "note": "Same status as S4: threshold requires calibration, not yet executed."
+    },
+    {
+      "id": "dedup",
+      "name": "Exact & near deduplication",
+      "input_records": 112960,
+      "output_records": 104048,
+      "findings": {
+        "exact_duplicate_records": 8912
+      }
+    },
+    {
+      "id": "pii",
+      "name": "PII & secret scrubbing",
+      "status": "audit",
+      "findings": {
+        "email": 7315,
+        "phone_india": 41,
+        "ipv4": 104,
+        "url": 7022
+      }
+    },
+    {
+      "id": "contamination",
+      "name": "Benchmark decontamination",
+      "status": "blocked",
+      "findings": {},
+      "note": "Same status as S4: a sealed benchmark fingerprint set is required before claiming a pass."
+    },
+    {
+      "id": "manifest",
+      "name": "Deterministic provenance manifest",
+      "status": "complete",
+      "findings": {
+        "source_sha256": "e9b5d671812b5ca2fbd7b625a37d5c99a19576c37252cdc806defe256aea6dad",
+        "revision": "main"
+      }
+    }
+  ],
+  "extra": {
+    "role": "agentic pretraining/SFT lane candidate (D11)",
+    "note": "system field carries the available-function schema; chat field carries the multi-turn tool-call conversation as a single string with role markers.",
+    "swap_reason": "Salesforce/xlam-function-calling-60k is gated (401); this is a real, ungated, appropriately licensed substitute."
+  }
+}

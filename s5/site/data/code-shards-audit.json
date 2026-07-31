@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-07-31T14:33:54.666521+00:00",
+  "status": "measured-multi-shard-sample",
+  "purpose": "Replaces D38's single-shard extrapolation with a real aggregate measurement across multiple shards of codeparrot/github-code-clean, to check whether shard 0's 52.8% permissive-license fraction is representative or an outlier.",
+  "dataset": "codeparrot/github-code-clean",
+  "method": "Reads only the 'license' and 'size' (byte count) columns -- no text, no tokenization -- across a deterministic, evenly spaced sample of shards. Token counts are estimated from measured byte totals via a tokens-per-byte ratio calibrated against audit_code.py's exact tiktoken count for shard 0, not re-tokenized here.",
+  "runtime": {
+    "python": "3.13.14",
+    "pyarrow": "25.0.0"
+  },
+  "total_shards_in_dataset": 883,
+  "sampled_shard_indices": [
+    0,
+    88,
+    176,
+    264,
+    353,
+    441,
+    529,
+    618,
+    706,
+    794
+  ],
+  "tokens_per_byte_calibration": {
+    "source": "audit_code.py shard-0 exact tiktoken count",
+    "shard0_measured_tokens": 270601959,
+    "shard0_total_bytes_this_scan": 1019685039,
+    "tokens_per_byte": 0.265378
+  },
+  "per_shard": [
+    {
+      "shard_index": 0,
+      "total_rows": 126925,
+      "total_bytes": 1019685039,
+      "permissive_rows": 81693,
+      "permissive_bytes": 559537303,
+      "permissive_byte_fraction": 0.5487
+    },
+    {
+      "shard_index": 88,
+      "total_rows": 126925,
+      "total_bytes": 1011749835,
+      "permissive_rows": 82960,
+      "permissive_bytes": 575047046,
+      "permissive_byte_fraction": 0.5684
+    },
+    {
+      "shard_index": 176,
+      "total_rows": 126925,
+      "total_bytes": 1034080319,
+      "permissive_rows": 84264,
+      "permissive_bytes": 596127992,
+      "permissive_byte_fraction": 0.5765
+    },
+    {
+      "shard_index": 264,
+      "total_rows": 126924,
+      "total_bytes": 1029823596,
+      "permissive_rows": 84145,
+      "permissive_bytes": 593021462,
+      "permissive_byte_fraction": 0.5758
+    },
+    {
+      "shard_index": 353,
+      "total_rows": 126924,
+      "total_bytes": 1014187373,
+      "permissive_rows": 83478,
+      "permissive_bytes": 581170473,
+      "permissive_byte_fraction": 0.573
+    },
+    {
+      "shard_index": 441,
+      "total_rows": 126924,
+      "total_bytes": 1034913544,
+      "permissive_rows": 81758,
+      "permissive_bytes": 579702511,
+      "permissive_byte_fraction": 0.5601
+    },
+    {
+      "shard_index": 529,
+      "total_rows": 126924,
+      "total_bytes": 1022016939,
+      "permissive_rows": 82258,
+      "permissive_bytes": 580594659,
+      "permissive_byte_fraction": 0.5681
+    },
+    {
+      "shard_index": 618,
+      "total_rows": 126924,
+      "total_bytes": 1010084226,
+      "permissive_rows": 85504,
+      "permissive_bytes": 590641652,
+      "permissive_byte_fraction": 0.5847
+    },
+    {
+      "shard_index": 706,
+      "total_rows": 126924,
+      "total_bytes": 1015728200,
+      "permissive_rows": 83772,
+      "permissive_bytes": 580388844,
+      "permissive_byte_fraction": 0.5714
+    },
+    {
+      "shard_index": 794,
+      "total_rows": 126924,
+      "total_bytes": 1023259812,
+      "permissive_rows": 81176,
+      "permissive_bytes": 562169781,
+      "permissive_byte_fraction": 0.5494
+    }
+  ],
+  "permissive_byte_fraction_stats": {
+    "mean": 0.5676,
+    "stdev": 0.0117,
+    "min": 0.5487,
+    "max": 0.5847
+  },
+  "aggregate_permissive_byte_fraction": 0.5676,
+  "full_corpus_estimate": {
+    "method": "mean bytes/shard across 10 sampled shards x 883 total shards x calibrated tokens-per-byte ratio",
+    "estimated_total_tokens": 239379220605,
+    "estimated_permissive_tokens": 135873228014
+  },
+  "caveats": [
+    "Byte-to-token calibration uses a single shard's ratio (shard 0); if code-file size/token density varies by language mix across shards, this ratio may not hold uniformly.",
+    "10 of 883 shards sampled (~1.1%) -- a wider sample would further narrow the variance estimate.",
+    "License is inherited from the origin repository at BigQuery export time (2022); not re-verified per-file."
+  ]
+}

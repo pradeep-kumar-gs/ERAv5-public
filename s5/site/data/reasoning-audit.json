@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-07-31T06:32:41.096363+00:00",
+  "manifest": {
+    "dataset": "bespokelabs/Bespoke-Stratos-17k",
+    "revision": "main",
+    "source_sha256": "57a99743cbb6e6119bd327bc1998bf8cabd09361a78a0d2223dda1989f5ce18b",
+    "tokenizer": "cl100k_base",
+    "license": "Apache-2.0"
+  },
+  "raw": {
+    "records": 16710,
+    "tokens": 89717186,
+    "mean_tokens_per_record": 5364.45,
+    "median_tokens_per_record": 3526.0,
+    "p95_tokens_per_record": 16082,
+    "max_tokens_per_record": 33734
+  },
+  "stages": [
+    {
+      "id": "normalize",
+      "name": "Unicode & text normalization",
+      "input_tokens": 89717186,
+      "output_tokens": 89640025,
+      "findings": {
+        "control_or_format_chars_removed": 61
+      }
+    },
+    {
+      "id": "format",
+      "name": "Canonical conversation formatting",
+      "input_records": 16710,
+      "output_records": 16710,
+      "findings": {
+        "note": "Single-turn or role-tagged records reformatted to a uniform schema at load time."
+      }
+    },
+    {
+      "id": "language",
+      "name": "Language & script validation",
+      "input_records": 16710,
+      "output_records": 16710,
+      "findings": {
+        "records_below_50pct_ascii_script_ratio": 0
+      },
+      "note": "Expected language: English."
+    },
+    {
+      "id": "heuristic",
+      "name": "Heuristic quality filtering",
+      "input_records": 16710,
+      "output_records": 13368,
+      "findings": {
+        "empty": 0,
+        "over_8192_tokens": 3342
+      }
+    },
+    {
+      "id": "classifier",
+      "name": "Quality-score gate",
+      "status": "planned",
+      "findings": {},
+      "note": "Same status as S4: threshold requires calibration, not yet executed."
+    },
+    {
+      "id": "dedup",
+      "name": "Exact & near deduplication",
+      "input_records": 16710,
+      "output_records": 16710,
+      "findings": {
+        "exact_duplicate_records": 0
+      }
+    },
+    {
+      "id": "pii",
+      "name": "PII & secret scrubbing",
+      "status": "audit",
+      "findings": {
+        "email": 109,
+        "phone_india": 904,
+        "ipv4": 106,
+        "url": 442
+      }
+    },
+    {
+      "id": "contamination",
+      "name": "Benchmark decontamination",
+      "status": "blocked",
+      "findings": {},
+      "note": "Same status as S4: a sealed benchmark fingerprint set is required before claiming a pass."
+    },
+    {
+      "id": "manifest",
+      "name": "Deterministic provenance manifest",
+      "status": "complete",
+      "findings": {
+        "source_sha256": "57a99743cbb6e6119bd327bc1998bf8cabd09361a78a0d2223dda1989f5ce18b",
+        "revision": "main"
+      }
+    }
+  ],
+  "extra": {
+    "role": "reasoning/difficulty-band lane candidate (S3 fallback, first used here)",
+    "curriculum_band_distribution_by_thought_tokens": {
+      "Band 2 (medium CoT)": 6681,
+      "Band 3 (long CoT)": 9931,
+      "Band 1 (short CoT)": 98
+    },
+    "curriculum_band_representative_thought_token_count": {
+      "Band 2 (medium CoT)": 500,
+      "Band 3 (long CoT)": 2001,
+      "Band 1 (short CoT)": 209
+    },
+    "note": "Bands measured on <|begin_of_thought|>...<|end_of_thought|> span length per record, matching the README's 4-band curriculum definition."
+  }
+}

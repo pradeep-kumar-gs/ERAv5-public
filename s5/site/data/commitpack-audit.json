@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-07-31T15:56:31.331689+00:00",
+  "status": "measured-spot-sample",
+  "purpose": "Second, independent Code-lane source audit (D40), to start narrowing the gap D38/D39 left after github-code-clean alone covered ~22.6% of the 600B-token Code-lane budget. Also runs a real cross-source overlap check against D38/D39's cached github-code-clean shard 0, since both datasets draw from the same public-GitHub universe.",
+  "dataset": "bigcode/commitpack",
+  "dataset_revision": "5eee2c845bf88dbffcafedb6e80d2a72a43fe575",
+  "upstream_source": "BigCode's CommitPack: git commit history mined across public GitHub repositories, 350 languages, ~3.8TB raw. Each row is one commit's before/after file contents plus commit message.",
+  "license_note": "Each row carries the license of its origin GitHub repository (dataset's own 'license' column), same provenance approach as github-code-clean (D38). This audit reports figures for the permissive allowlist only (['apache-2.0', 'bsd-2-clause', 'bsd-3-clause', 'cc0-1.0', 'isc', 'mit', 'unlicense']); copyleft and ambiguous licenses are measured but excluded from sampled/selected figures below.",
+  "scope": "One shard file each for 5 of 350 language directories (['python', 'javascript', 'java', 'c', 'go']) -- NOT the full corpus. Chosen as mainstream, high-volume programming languages; excludes markup/data/doc-heavy directories (json, xml, text, markdown, csv, yaml, html) that dominate CommitPack's raw byte count but are not 'software engineering code' by this project's Code-lane definition.",
+  "tokenizer": "cl100k_base",
+  "runtime": {
+    "python": "3.13.14",
+    "tiktoken": "0.13.0"
+  },
+  "target_tokens": 2000000,
+  "shard_files": {
+    "python": "data/python/python-0001.jsonl",
+    "javascript": "data/javascript/javascript-0001.jsonl",
+    "java": "data/java/java-0001.jsonl",
+    "c": "data/c/c-0001.jsonl",
+    "go": "data/go/go-0001.jsonl"
+  },
+  "shard_sha256": {
+    "python": "a63f3dcdb1b400f029cb39e99cd814c47c3f758d70e76740b802902386abb311",
+    "javascript": "819399f79dc91284144cf2df9c8c81f0dc644d2ff176bb4410b083549e0ffb97",
+    "java": "c26595b405712e2e88044ae0d658a99296a4324d12d76be3c8ae714290101b49",
+    "c": "0efad51014e0b29ab794a7958ce9d4b3f360b49406e834a91fbe589106f9ea1a",
+    "go": "0b1a24bbc422ad658d1471329573560f340891e2a60bfd324cd7cfd64857a5f1"
+  },
+  "shard_stats": {
+    "total_rows": 49243,
+    "total_tokens": 339293298,
+    "permissive_rows": 42188,
+    "permissive_tokens": 287796504,
+    "license_counts": {
+      "mit": 20539,
+      "apache-2.0": 13953,
+      "bsd-3-clause": 5135,
+      "agpl-3.0": 3124,
+      "lgpl-2.1": 2491,
+      "bsd-2-clause": 1661,
+      "mpl-2.0": 770,
+      "epl-1.0": 536,
+      "isc": 463,
+      "unlicense": 315,
+      "cc0-1.0": 122,
+      "artistic-2.0": 103,
+      "unknown": 31
+    },
+    "per_language": {
+      "python": {
+        "total_rows": 13327,
+        "total_tokens": 57962551,
+        "permissive_rows": 11604,
+        "permissive_tokens": 50339172
+      },
+      "javascript": {
+        "total_rows": 10106,
+        "total_tokens": 62621320,
+        "permissive_rows": 9158,
+        "permissive_tokens": 52880752
+      },
+      "java": {
+        "total_rows": 13207,
+        "total_tokens": 51891839,
+        "permissive_rows": 10992,
+        "permissive_tokens": 42512288
+      },
+      "c": {
+        "total_rows": 9282,
+        "total_tokens": 67930377,
+        "permissive_rows": 7559,
+        "permissive_tokens": 45881086
+      },
+      "go": {
+        "total_rows": 3321,
+        "total_tokens": 98887211,
+        "permissive_rows": 2875,
+        "permissive_tokens": 96183206
+      }
+    }
+  },
+  "permissive_fraction_of_shard_tokens": 0.8482,
+  "same_language_extrapolation": {
+    "method": "tokens_per_byte (measured on the 5 sampled shards) x full data/<lang>/ directory byte size for those SAME 5 languages only -- NOT extrapolated to all 350 CommitPack languages.",
+    "languages_covered": [
+      "python",
+      "javascript",
+      "java",
+      "c",
+      "go"
+    ],
+    "sampled_shard_bytes": 2608501446,
+    "full_dir_bytes_same_languages": 933430000000,
+    "tokens_per_byte": 0.130072,
+    "estimated_total_tokens_same_languages": 121413213566,
+    "estimated_permissive_tokens_same_languages": 102985524942,
+    "not_covered": "345 other language directories (php, typescript, ruby, c#, rust, and 340 more, plus non-programming-language dirs like json/xml/markdown/csv) are entirely unsampled -- their tokens are cited (BigCode's ~3.8TB dataset-card total) not measured, and excluded from every figure in this file."
+  },
+  "sample": {
+    "selected_tokens": 1794138,
+    "selected_rows": 344,
+    "selected_language_counts": {
+      "java": 93,
+      "python": 90,
+      "javascript": 71,
+      "c": 70,
+      "go": 20
+    },
+    "exact_duplicate_rows_within_sample": 8,
+    "exact_overlap_with_github_code_clean_shard0": 0,
+    "pii_or_secret_hits": {
+      "email": 57,
+      "secret_like_assignment": 9
+    },
+    "sample_manifest_sha256": "e7eb5469203c4e8fd7c254c8d88e5c6d44661d62d4f025b75088bf2570c802b4"
+  },
+  "cross_source_overlap_check": {
+    "method": "SHA-256 of normalized code text for every permissive row in this script's sample, compared against a hash set built from every permissive row in D38/D39's already-cached github-code-clean shard 0 (1 of 883 shards).",
+    "reference_shard": "s5/data/raw/github-code/data/train-00000-of-00880.parquet",
+    "reference_hash_set_size": 81693,
+    "exact_overlap_rows_found": 0,
+    "caveat": "This checks only 1 of github-code-clean's 883 shards against this script's own sample -- a lower-bound signal from a tiny fraction of both corpora's file-level intersection, not proof of the true overlap at full-corpus scale. Near-zero exact matches here does NOT mean the two corpora's full-scale permissive-token estimates are additive without double-counting risk: CommitPack stores per-commit snapshots (often many per file, at different points in the same file's history) of the same public repositories github-code-clean snapshot once, so file-level (not exact-content-level) overlap between the two corpora is almost certainly substantial and unmeasured here."
+  },
+  "caveats": [
+    "This is a 5-of-350-language spot-sample, not a full-corpus audit -- do not extrapolate this sample's 84.8% permissive-token fraction to CommitPack's other 345 language directories without a wider sample.",
+    "License is inherited from the origin repository at the time BigCode mined the commit; it is not re-verified per-file and may be stale relative to the repository's current license.",
+    "new_contents (the post-commit file state) is used as the code text measured here; old_contents (the pre-commit state) is present in the dataset but not counted, to avoid trivially double-counting near-identical before/after pairs.",
+    "See cross_source_overlap_check above: this second source is NOT proven independent of github-code-clean (D38/D39) at full-corpus scale -- combine the two lanes' estimates as an upper bound, not a safe sum.",
+    "Secret/PII scrubbing here is a coarse regex heuristic, not a production-grade secret scanner, matching every other S5 lane's pii stage.",
+    "Tokenized with cl100k_base for cross-lane audit comparability; a real Code-lane pretraining run would use a code-aware tokenizer, not this one."
+  ]
+}
