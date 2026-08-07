@@ -1,0 +1,3 @@
+{"ledger_offset": 0, "step": 21, "run_id": "fork", "batch_id": "code-step0021-2ba8a607450b", "lane": "code", "stage": "mid", "loss": 7.652909278869629, "grad_norm": 1.2831909656524658}
+{"ledger_offset": 1, "step": 22, "run_id": "fork", "batch_id": "code-step0022-55f139f41a7f", "lane": "code", "stage": "mid", "loss": 7.220243453979492, "grad_norm": 1.4633026123046875}
+{"ledger_offset": 2, "step": 23, "run_id": "fork", "batch_id": "agent-step0023-4f33ebe15f46", "lane": "agent", "stage": "mid", "loss": 10.13515853881836, "grad_norm": 1.2735384702682495}

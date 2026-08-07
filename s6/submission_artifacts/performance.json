@@ -1,0 +1,15 @@
+{
+  "elapsed_seconds": 11.422138214111328,
+  "total_steps": 48,
+  "total_batches_trained": 31,
+  "tokens_per_second": 1389.58,
+  "useful_loss_bearing_tokens_per_second": 1330.49,
+  "packing_utilization": 0.9575,
+  "opus_decision_counts": {
+    "ACCEPT": 25,
+    "PROTECTED_FLOOR_OVERRIDE": 6,
+    "DEFER": 1,
+    "REJECT": 16
+  },
+  "opus_acceptance_rate": 0.6458
+}

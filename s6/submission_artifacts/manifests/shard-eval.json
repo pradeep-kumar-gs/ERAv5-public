@@ -1,0 +1,109 @@
+{
+  "shard_id": "shard-eval",
+  "lane": "eval",
+  "role": "eval",
+  "path": "shard-eval.bin",
+  "sha256": "3529d87a600727303c9054be8fb78789e1acf9aa2776b4417d47f037dc075a1e",
+  "token_count": 1974,
+  "dtype": "int32",
+  "tokenizer_name": "cl100k_base",
+  "tokenizer_hash": "34c24bb049a6fa00c2645bcdf6a19676ade6dd9ebc52086efd9876cc6115a52c",
+  "documents": [
+    {
+      "doc_id": "eval-0000",
+      "start": 0,
+      "end": 197,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0001",
+      "start": 197,
+      "end": 397,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0002",
+      "start": 397,
+      "end": 589,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0003",
+      "start": 589,
+      "end": 782,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0004",
+      "start": 782,
+      "end": 977,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0005",
+      "start": 977,
+      "end": 1169,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0006",
+      "start": 1169,
+      "end": 1353,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0007",
+      "start": 1353,
+      "end": 1553,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0000",
+      "start": 1553,
+      "end": 1604,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0001",
+      "start": 1604,
+      "end": 1661,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0002",
+      "start": 1661,
+      "end": 1697,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0003",
+      "start": 1697,
+      "end": 1754,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0004",
+      "start": 1754,
+      "end": 1816,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0005",
+      "start": 1816,
+      "end": 1886,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0006",
+      "start": 1886,
+      "end": 1924,
+      "turns": []
+    },
+    {
+      "doc_id": "eval-0007",
+      "start": 1924,
+      "end": 1974,
+      "turns": []
+    }
+  ]
+}

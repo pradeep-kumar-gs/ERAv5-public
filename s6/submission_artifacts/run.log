@@ -1,0 +1,77 @@
+[2026-08-06T14:29:32] run started
+[2026-08-06T14:29:33] shards created
+[2026-08-06T14:29:33] [PASS] tokenizer_hash_verified (shard-prose: ok)
+[2026-08-06T14:29:33] [PASS] tokenizer_hash_verified (shard-code: ok)
+[2026-08-06T14:29:33] [PASS] tokenizer_hash_verified (shard-agent: ok)
+[2026-08-06T14:29:33] [PASS] tokenizer_hash_verified (shard-eval: ok)
+[2026-08-06T14:29:33] manifests validated
+[2026-08-06T14:29:33] mixture compiled
+[2026-08-06T14:29:33] [PASS] eval_shard_blocked (firewall breach: attempted to train on eval-tagged lane 'eval')
+[2026-08-06T14:29:33] evaluation data blocked
+[2026-08-06T14:29:34] step 1 run=main lane=prose stage=warmup opus=ACCEPT score=0.7275 trained=True loss=11.7388
+[2026-08-06T14:29:34] step 2 run=main lane=code stage=warmup opus=PROTECTED_FLOOR_OVERRIDE score=0.0235 trained=True loss=11.7555
+[2026-08-06T14:29:34] step 3 run=main lane=prose stage=warmup opus=ACCEPT score=0.7280 trained=True loss=11.3330
+[2026-08-06T14:29:34] step 4 run=main lane=prose stage=warmup opus=ACCEPT score=0.7991 trained=True loss=11.0994
+[2026-08-06T14:29:35] step 5 run=main lane=code stage=warmup opus=ACCEPT score=0.0850 trained=True loss=11.3955
+[2026-08-06T14:29:35] step 6 run=main lane=code stage=warmup opus=ACCEPT score=0.0973 trained=True loss=11.1712
+[2026-08-06T14:29:35] step 7 run=main lane=prose stage=warmup opus=ACCEPT score=0.8869 trained=True loss=10.4018
+[2026-08-06T14:29:35] step 8 run=main lane=agent stage=warmup opus=DEFER score=0.0000 trained=False
+[2026-08-06T14:29:35] step 9 run=main lane=prose stage=warmup opus=ACCEPT score=0.9065 trained=True loss=10.0949
+[2026-08-06T14:29:36] step 10 run=main lane=prose stage=warmup opus=ACCEPT score=0.9237 trained=True loss=9.7249
+[2026-08-06T14:29:36] [PASS] checkpoint_saved step=10 file=checkpoint_step0010.pt sha256=2539a7501c65
+[2026-08-06T14:29:36] step 11 run=main lane=prose stage=warmup opus=ACCEPT score=0.9200 trained=True loss=9.3798
+[2026-08-06T14:29:36] step 12 run=main lane=code stage=warmup opus=ACCEPT score=0.1702 trained=True loss=10.3566
+[2026-08-06T14:29:37] step 13 run=main lane=code stage=warmup opus=ACCEPT score=0.1599 trained=True loss=9.9774
+[2026-08-06T14:29:37] step 14 run=main lane=code stage=warmup opus=ACCEPT score=0.2559 trained=True loss=9.6412
+[2026-08-06T14:29:37] step 15 run=main lane=prose stage=warmup opus=ACCEPT score=0.9542 trained=True loss=8.2866
+[2026-08-06T14:29:37] step 16 run=main lane=prose stage=warmup opus=ACCEPT score=0.9562 trained=True loss=7.9496
+[2026-08-06T14:29:37] step 17 run=main lane=code stage=mid opus=ACCEPT score=0.2699 trained=True loss=8.6748
+[2026-08-06T14:29:38] step 18 run=main lane=prose stage=mid opus=ACCEPT score=0.9355 trained=True loss=7.3498
+[2026-08-06T14:29:38] step 19 run=main lane=prose stage=mid opus=ACCEPT score=0.9641 trained=True loss=6.9754
+[2026-08-06T14:29:38] step 20 run=main lane=agent stage=mid opus=ACCEPT score=0.1370 trained=True loss=10.6600
+[2026-08-06T14:29:38] [PASS] checkpoint_saved step=20 file=checkpoint_step0020.pt sha256=9ddf5a53b5b6
+[2026-08-06T14:29:39] step 21 run=main lane=code stage=mid opus=ACCEPT score=0.1660 trained=True loss=7.6529
+[2026-08-06T14:29:39] step 22 run=main lane=code stage=mid opus=ACCEPT score=0.1581 trained=True loss=7.2202
+[2026-08-06T14:29:39] step 23 run=main lane=agent stage=mid opus=ACCEPT score=0.0836 trained=True loss=10.1352
+[2026-08-06T14:29:39] step 24 run=main lane=agent stage=mid opus=REJECT score=-0.1524 trained=False
+[2026-08-06T14:29:39] step 25 run=main lane=agent stage=mid opus=REJECT score=-0.0660 trained=False
+[2026-08-06T14:29:40] step 26 run=main lane=prose stage=mid opus=ACCEPT score=0.9095 trained=True loss=5.6147
+[2026-08-06T14:29:40] step 27 run=main lane=code stage=mid opus=REJECT score=-0.1297 trained=False
+[2026-08-06T14:29:40] step 28 run=main lane=code stage=mid opus=REJECT score=-0.1001 trained=False
+[2026-08-06T14:29:40] step 29 run=main lane=prose stage=mid opus=ACCEPT score=0.9179 trained=True loss=5.4800
+[2026-08-06T14:29:40] step 30 run=main lane=code stage=mid opus=REJECT score=-0.1889 trained=False
+[2026-08-06T14:29:41] [PASS] checkpoint_saved step=30 file=checkpoint_step0030.pt sha256=fc028f5dc567
+[2026-08-06T14:29:41] batches packed: 30 so far (main lineage, steps 1-30)
+[2026-08-06T14:29:41] crash simulated
+[2026-08-06T14:29:42] step 31 run=main lane=code stage=mid opus=PROTECTED_FLOOR_OVERRIDE score=-0.1908 trained=True loss=6.4720
+[2026-08-06T14:29:42] step 32 run=main lane=agent stage=mid opus=REJECT score=-0.3514 trained=False
+[2026-08-06T14:29:42] step 33 run=main lane=code stage=anneal opus=PROTECTED_FLOOR_OVERRIDE score=-0.2660 trained=True loss=6.6248
+[2026-08-06T14:29:42] step 34 run=main lane=code stage=anneal opus=PROTECTED_FLOOR_OVERRIDE score=-0.3044 trained=True loss=6.7228
+[2026-08-06T14:29:42] run resumed
+[2026-08-06T14:29:42] [PASS] resume_next_batch_matched (all 4 resumed batches matched the pre-crash expected batches)
+[2026-08-06T14:29:42] step 35 run=main lane=agent stage=anneal opus=REJECT score=-0.3234 trained=False
+[2026-08-06T14:29:43] step 36 run=main lane=agent stage=anneal opus=REJECT score=-0.2243 trained=False
+[2026-08-06T14:29:43] step 37 run=main lane=prose stage=anneal opus=ACCEPT score=0.8475 trained=True loss=4.9180
+[2026-08-06T14:29:43] step 38 run=main lane=agent stage=anneal opus=REJECT score=-0.2591 trained=False
+[2026-08-06T14:29:43] step 39 run=main lane=prose stage=anneal opus=ACCEPT score=0.8642 trained=True loss=4.7549
+[2026-08-06T14:29:43] step 40 run=main lane=code stage=anneal opus=PROTECTED_FLOOR_OVERRIDE score=-0.3523 trained=True loss=6.6927
+[2026-08-06T14:29:44] [PASS] checkpoint_saved step=40 file=checkpoint_step0040.pt sha256=3c668b63bf91
+[2026-08-06T14:29:44] step 41 run=main lane=agent stage=anneal opus=REJECT score=-0.3592 trained=False
+[2026-08-06T14:29:44] step 42 run=main lane=agent stage=anneal opus=REJECT score=-0.3611 trained=False
+[2026-08-06T14:29:44] step 43 run=main lane=code stage=anneal opus=PROTECTED_FLOOR_OVERRIDE score=-0.3634 trained=True loss=6.3219
+[2026-08-06T14:29:44] step 44 run=main lane=code stage=anneal opus=REJECT score=-0.3956 trained=False
+[2026-08-06T14:29:44] step 45 run=main lane=code stage=anneal opus=REJECT score=-0.4069 trained=False
+[2026-08-06T14:29:45] step 46 run=main lane=code stage=anneal opus=REJECT score=-0.4497 trained=False
+[2026-08-06T14:29:45] step 47 run=main lane=code stage=anneal opus=REJECT score=-0.4307 trained=False
+[2026-08-06T14:29:45] step 48 run=main lane=code stage=anneal opus=REJECT score=-0.4543 trained=False
+[2026-08-06T14:29:45] OPUS decisions recorded: 48 total (main lineage)
+[2026-08-06T14:29:45] [PASS] replay_hash_matched (4 records over steps (10, 13))
+[2026-08-06T14:29:45] historical stream replayed
+[2026-08-06T14:29:45] step 21 run=fork lane=code stage=mid opus=ACCEPT score=0.1660 trained=True loss=7.6529
+[2026-08-06T14:29:45] step 22 run=fork lane=code stage=mid opus=ACCEPT score=0.1581 trained=True loss=7.2202
+[2026-08-06T14:29:45] step 23 run=fork lane=agent stage=mid opus=ACCEPT score=0.0836 trained=True loss=10.1352
+[2026-08-06T14:29:46] [PASS] checkpoint_saved step=23 file=checkpoint_step0023.pt sha256=9f3d9c2ea4fe
+[2026-08-06T14:29:46] branch forked from checkpoint@step20 -> run_id=fork
+[2026-08-06T14:29:46] performance measured
+[2026-08-06T14:29:46] audit completed
+[2026-08-06T14:29:46] run finished; evidence overall_pass=True

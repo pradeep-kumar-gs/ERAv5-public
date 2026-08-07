@@ -1,0 +1,50 @@
+{"doc_id": "code-commitpack-0000", "source": "commitpack:python", "text": "\nprint \"Hello World!\"\n\nprint \"Goodby World...\"\n"}
+{"doc_id": "code-commitpack-0001", "source": "commitpack:python", "text": "from hoomd.update.box_resize import BoxResize\n\n\n# TODO remove when no longer necessary\nclass _updater:\n    pass\n\n\n__all__ = ['BoxResize']\n"}
+{"doc_id": "code-commitpack-0002", "source": "commitpack:python", "text": "#!/usr/bin/python\n# -*- coding: utf-8 -*-\n\n# Licensed under the MIT license:\n# http://www.opensource.org/licenses/mit-license\n# Copyright (c) 2011 globo.com timehome@corp.globo.com\n\n__version__ = \"0.2.2\"\n"}
+{"doc_id": "code-commitpack-0003", "source": "commitpack:python", "text": "__version__ = \"1.7.0\"\n"}
+{"doc_id": "code-commitpack-0004", "source": "commitpack:python", "text": "\"\"\"\nPyWinCFFI\n=========\n\nThe root of the pywincffi package.  See the ``README`` and documentation for\nhelp and examples.\n\"\"\"\n\n__version__ = (0, 4, 0)\n"}
+{"doc_id": "code-commitpack-0005", "source": "commitpack:python", "text": "from qa.models import Question\nfrom django import forms\n\n\nclass QuestionForm(forms.ModelForm):\n    class Meta:\n        model = Question\n        fields = ('question_text', 'tags')\n"}
+{"doc_id": "code-commitpack-0006", "source": "commitpack:python", "text": "__version__ = '0.5.2'\n"}
+{"doc_id": "code-commitpack-0007", "source": "commitpack:python", "text": "version = \"1.0.0dev\"\n"}
+{"doc_id": "code-commitpack-0008", "source": "commitpack:python", "text": "from utils import file_sha1sum\n\n\nclass AnalysisFile(object):\n    def __init__(self, filename):\n        self.filename = filename\n\n    def checksum(self):\n        return file_sha1sum(self.filename)\n"}
+{"doc_id": "code-commitpack-0009", "source": "commitpack:python", "text": "# seleniumbase package\n__version__ = \"1.51.14\"\n"}
+{"doc_id": "code-commitpack-0010", "source": "commitpack:python", "text": "# seleniumbase package\n__version__ = \"4.8.4\"\n"}
+{"doc_id": "code-commitpack-0011", "source": "commitpack:python", "text": "__version__ = '1.1.1'\n"}
+{"doc_id": "code-commitpack-0012", "source": "commitpack:python", "text": "\"\"\"@author: Bryan Silverthorn <bcs@cargo-cult.org>\"\"\"\n\nfrom __future__ import absolute_import\n\nfrom . import features\nfrom . import solvers\nfrom . import sat\nfrom . import pb\n\n"}
+{"doc_id": "code-commitpack-0013", "source": "commitpack:python", "text": "try:\n    from json_field.fields import JSONField\nexcept ImportError:\n    pass # fails when imported by setup.py, no worries\n\n__version__ = '0.4.1'\n"}
+{"doc_id": "code-commitpack-0014", "source": "commitpack:python", "text": "__version__ = \"3.1.0\"\n"}
+{"doc_id": "code-commitpack-0015", "source": "commitpack:python", "text": "__version__ = '2.31.0'\n"}
+{"doc_id": "code-commitpack-0016", "source": "commitpack:python", "text": "__version__ = '2.24.0'\n"}
+{"doc_id": "code-commitpack-0017", "source": "commitpack:python", "text": "#ipc_lista1.4\n#Professor: Jucimar Junior\n#Any Mendes Carvalho \n#Faça um Programa que peça as 4 notas bimestrais e mostre a media\n\n"}
+{"doc_id": "code-commitpack-0018", "source": "commitpack:python", "text": "#ipc_lista1.4\n#Professor: Jucimar Junior\n#Any Mendes Carvalho - 1615310044\n#\n#\n#\n#\n#Faça um Programa que peça as 4 notas bimestrais e mostre a media\n\nprint\nmedia = (nota1+nota2+nota3+nota4)/4.0\nnota2 =\n"}
+{"doc_id": "code-commitpack-0019", "source": "commitpack:python", "text": "__version__ = '1.4.13.0-dev'\n\nif __name__ == '__main__':\n    print(__version__)\n"}
+{"doc_id": "code-commitpack-0020", "source": "commitpack:python", "text": "__version__ = '3.3.1'\n\nif __name__ == '__main__':\n    print(__version__)\n\n"}
+{"doc_id": "code-commitpack-0021", "source": "commitpack:python", "text": "__version__ = '1.4.11.1'\n\nif __name__ == '__main__':\n    print(__version__)\n"}
+{"doc_id": "code-commitpack-0022", "source": "commitpack:python", "text": "__version__ = '2.30.53'\n"}
+{"doc_id": "code-commitpack-0023", "source": "commitpack:python", "text": "__version__ = '3.16.1'\n\nif __name__ == '__main__':\n    # print version if run directly i.e. in a CI script\n    print(__version__)\n"}
+{"doc_id": "code-commitpack-0024", "source": "commitpack:python", "text": "__version__ = '0.2.4'"}
+{"doc_id": "code-commitpack-0025", "source": "commitpack:python", "text": "version = \"0.4.4\"\nprotoVersion = \"400\""}
+{"doc_id": "code-commitpack-0026", "source": "commitpack:python", "text": "if __name__ == \"__main__\":\n    __version__ = \"0.11.0\"\nelse:\n    from . import animatedsprite\n    from . import tilemap\n    from . import layers\n    from . import camera\n"}
+{"doc_id": "code-commitpack-0027", "source": "commitpack:python", "text": "from django.conf.urls import url, include\n\nimport views\n\nurlpatterns = [\n    url(r'^$', views.MapView.as_view(), name='home'),\n    url(r'^grid/$', views.FetchGridView.as_view(), name='grid'),\n]\n"}
+{"doc_id": "code-commitpack-0028", "source": "commitpack:python", "text": "__version__ = (2022, 2, 6, '76a59e9e')\nVERSION = \".\".join(map(str, __version__))\n"}
+{"doc_id": "code-commitpack-0029", "source": "commitpack:python", "text": "# coding:utf-8\nfrom nose.core import run\n\nif __name__ == \"__main__\":\n    args = ['', '--cover-package=pagarme', '--with-coverage']\n    run(argv=args)\n"}
+{"doc_id": "code-commitpack-0030", "source": "commitpack:python", "text": "# -*- coding: utf-8 -*-\nfrom __future__ import unicode_literals, absolute_import, division\n\n__version_info__ = (0, 2, 4)\n__version__ = '.'.join(map(str, __version_info__))\n"}
+{"doc_id": "code-commitpack-0031", "source": "commitpack:python", "text": "try:\n    # during the installation process this can raise an exception.\n    from .data import SkData\nexcept:\n    pass\n\n__author__ = 'Ivan Ogasawara'\n__email__ = 'ivan.ogasawara@gmail.com'\n__version__ = '0.1.3'\n\n"}
+{"doc_id": "code-commitpack-0032", "source": "commitpack:python", "text": "__version__ = '2.5.6'\n"}
+{"doc_id": "code-commitpack-0033", "source": "commitpack:python", "text": "VERSION = (0, 8, 1)\n\n\ndef get_version():\n    return \".\".join([str(i) for i in VERSION])\n\n__version__ = get_version()\n"}
+{"doc_id": "code-commitpack-0034", "source": "commitpack:python", "text": "#!/usr/bin/env python\n# -*- coding: utf-8 -*-\n\n__version__ = '0.5.1'\n"}
+{"doc_id": "code-commitpack-0035", "source": "commitpack:python", "text": "#SQLALCHEMY_ECHO = True\n"}
+{"doc_id": "code-commitpack-0036", "source": "commitpack:python", "text": "__version__ = '0.6.0.dev1'\n__author__ = 'D-Wave Systems Inc.'\n__authoremail__ = 'acondello@dwavesys.com'\n__description__ = 'A shared API for binary quadratic model samplers.'\n"}
+{"doc_id": "code-commitpack-0037", "source": "commitpack:python", "text": "\"\"\"This file contains the current Mythril version.\n\nThis file is suitable for sourcing inside POSIX shell, e.g. bash as well\nas for importing into Python.\n\"\"\"\n\n__version__ = \"v0.21.2\"\n"}
+{"doc_id": "code-commitpack-0038", "source": "commitpack:python", "text": "__author__ = \"Tsuyoshi Hombashi\"\n__copyright__ = \"Copyright 2016, {}\".format(__author__)\n__license__ = \"MIT License\"\n__version__ = \"1.0.0\"\n__maintainer__ = __author__\n__email__ = \"tsuyoshi.hombashi@gmail.com\"\n"}
+{"doc_id": "code-commitpack-0039", "source": "commitpack:python", "text": "from .fully_connected_layer import FullyConnectedLayer\nfrom .output_layer import OutputLayer\n"}
+{"doc_id": "code-commitpack-0040", "source": "commitpack:python", "text": "__version__ = \"0.7b1\"\n"}
+{"doc_id": "code-commitpack-0041", "source": "commitpack:python", "text": "from veripy import VerifierMonad\n"}
+{"doc_id": "code-commitpack-0042", "source": "commitpack:python", "text": "__version__ = '4.0.0'\n"}
+{"doc_id": "code-commitpack-0043", "source": "commitpack:python", "text": "__version__ = \"2.2.1\"\n"}
+{"doc_id": "code-commitpack-0044", "source": "commitpack:python", "text": "from thumborize.crypto import url\n"}
+{"doc_id": "code-commitpack-0045", "source": "commitpack:python", "text": "# -*- coding: utf-8 -*-\n# © <YEAR(S)> <AUTHOR(S)>\n# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).\nfrom . import account_payment\n"}
+{"doc_id": "code-commitpack-0046", "source": "commitpack:python", "text": "__version__ = '1.0.1'\n\ntry:\n    from .halnav import Navigator  # NOQA\nexcept ImportError:\n    # for setup.py and docs\n    pass\n"}
+{"doc_id": "code-commitpack-0047", "source": "commitpack:python", "text": "__author__ = 'OpenSlides Team <support@openslides.org>'\n__description__ = 'Presentation and assembly system'\n__version__ = '2.1-dev'\n"}
+{"doc_id": "code-commitpack-0048", "source": "commitpack:python", "text": "name = 'tinymce4-lite'\nauthors = 'Joost Cassee, Aljosa Mohorovic Roman Mirochnychenko'\nversion = '1.0.2'\nrelease = version\n"}
+{"doc_id": "code-commitpack-0049", "source": "commitpack:python", "text": "version_info = (0, 0, 4)\n__version__ = '.'.join(map(str, version_info))\n"}

@@ -1,0 +1,253 @@
+{
+  "shard_id": "shard-prose",
+  "lane": "prose",
+  "role": "train",
+  "path": "shard-prose.bin",
+  "sha256": "96146f2a05addeaa0c13b546264280dcc500ca0f0eb62b91b991db54b1d61bee",
+  "token_count": 7707,
+  "dtype": "int32",
+  "tokenizer_name": "cl100k_base",
+  "tokenizer_hash": "34c24bb049a6fa00c2645bcdf6a19676ade6dd9ebc52086efd9876cc6115a52c",
+  "documents": [
+    {
+      "doc_id": "prose-0000",
+      "start": 0,
+      "end": 190,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0001",
+      "start": 190,
+      "end": 387,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0002",
+      "start": 387,
+      "end": 577,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0003",
+      "start": 577,
+      "end": 772,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0004",
+      "start": 772,
+      "end": 958,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0005",
+      "start": 958,
+      "end": 1154,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0006",
+      "start": 1154,
+      "end": 1347,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0007",
+      "start": 1347,
+      "end": 1543,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0008",
+      "start": 1543,
+      "end": 1731,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0009",
+      "start": 1731,
+      "end": 1927,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0010",
+      "start": 1927,
+      "end": 2121,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0011",
+      "start": 2121,
+      "end": 2315,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0012",
+      "start": 2315,
+      "end": 2505,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0013",
+      "start": 2505,
+      "end": 2695,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0014",
+      "start": 2695,
+      "end": 2886,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0015",
+      "start": 2886,
+      "end": 3081,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0016",
+      "start": 3081,
+      "end": 3275,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0017",
+      "start": 3275,
+      "end": 3473,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0018",
+      "start": 3473,
+      "end": 3666,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0019",
+      "start": 3666,
+      "end": 3858,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0020",
+      "start": 3858,
+      "end": 4057,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0021",
+      "start": 4057,
+      "end": 4250,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0022",
+      "start": 4250,
+      "end": 4441,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0023",
+      "start": 4441,
+      "end": 4629,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0024",
+      "start": 4629,
+      "end": 4820,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0025",
+      "start": 4820,
+      "end": 5008,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0026",
+      "start": 5008,
+      "end": 5199,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0027",
+      "start": 5199,
+      "end": 5401,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0028",
+      "start": 5401,
+      "end": 5598,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0029",
+      "start": 5598,
+      "end": 5792,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0030",
+      "start": 5792,
+      "end": 5986,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0031",
+      "start": 5986,
+      "end": 6177,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0032",
+      "start": 6177,
+      "end": 6369,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0033",
+      "start": 6369,
+      "end": 6562,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0034",
+      "start": 6562,
+      "end": 6750,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0035",
+      "start": 6750,
+      "end": 6949,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0036",
+      "start": 6949,
+      "end": 7142,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0037",
+      "start": 7142,
+      "end": 7331,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0038",
+      "start": 7331,
+      "end": 7519,
+      "turns": []
+    },
+    {
+      "doc_id": "prose-0039",
+      "start": 7519,
+      "end": 7707,
+      "turns": []
+    }
+  ]
+}

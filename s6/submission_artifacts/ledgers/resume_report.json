@@ -1,0 +1,38 @@
+{
+  "steps_compared": 4,
+  "all_match": true,
+  "details": [
+    {
+      "step": 31,
+      "expected_batch_id": "code-step0031-baa976bff044",
+      "expected_hash": "baa976bff044a86dde71dd6359ae9387a1ff8745dfc1b96e85c9b5d37d4962ab",
+      "resumed_batch_id": "code-step0031-baa976bff044",
+      "resumed_hash": "baa976bff044a86dde71dd6359ae9387a1ff8745dfc1b96e85c9b5d37d4962ab",
+      "match": true
+    },
+    {
+      "step": 32,
+      "expected_batch_id": "agent-step0032-36f58e981ad7",
+      "expected_hash": "36f58e981ad778e83299d4e888b2bdc73351f9fbf1c13b937f0ea23f6726bd3e",
+      "resumed_batch_id": "agent-step0032-36f58e981ad7",
+      "resumed_hash": "36f58e981ad778e83299d4e888b2bdc73351f9fbf1c13b937f0ea23f6726bd3e",
+      "match": true
+    },
+    {
+      "step": 33,
+      "expected_batch_id": "code-step0033-901dbaaf6c69",
+      "expected_hash": "901dbaaf6c69e9e69b9613f8bc1ed55bf73f7dd21467b1894678567b9aec06d2",
+      "resumed_batch_id": "code-step0033-901dbaaf6c69",
+      "resumed_hash": "901dbaaf6c69e9e69b9613f8bc1ed55bf73f7dd21467b1894678567b9aec06d2",
+      "match": true
+    },
+    {
+      "step": 34,
+      "expected_batch_id": "code-step0034-13f7421a780e",
+      "expected_hash": "13f7421a780e9626307af5083dd9d46d4f8aaf7e00c2a9d68bd75dad40a8c682",
+      "resumed_batch_id": "code-step0034-13f7421a780e",
+      "resumed_hash": "13f7421a780e9626307af5083dd9d46d4f8aaf7e00c2a9d68bd75dad40a8c682",
+      "match": true
+    }
+  ]
+}

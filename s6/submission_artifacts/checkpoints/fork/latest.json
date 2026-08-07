@@ -1,0 +1,8 @@
+{
+  "path": "/Users/pradeep/AL/ERAv5/s6/submission_artifacts/checkpoints/fork/checkpoint_step0023.pt",
+  "step": 23,
+  "run_id": "fork",
+  "sha256": "9f3d9c2ea4fe641c574cb8fcef231b0a503d7f22c3c4c8a1badee7047eebf17d",
+  "consumption_offset": 3,
+  "learning_offset": 3
+}

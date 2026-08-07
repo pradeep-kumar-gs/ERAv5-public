@@ -1,0 +1,44 @@
+{
+  "start_step": 10,
+  "end_step": 13,
+  "records_replayed": 4,
+  "all_match": true,
+  "details": [
+    {
+      "step": 10,
+      "lane": "prose",
+      "original_batch_id": "prose-step0010-2678b3535ac9",
+      "replayed_batch_id": "prose-step0010-2678b3535ac9",
+      "original_hash": "2678b3535ac9b74672bf3096d4ca385418bc9016a7f5a6e3b6c43f269cc9d552",
+      "replayed_hash": "2678b3535ac9b74672bf3096d4ca385418bc9016a7f5a6e3b6c43f269cc9d552",
+      "match": true
+    },
+    {
+      "step": 11,
+      "lane": "prose",
+      "original_batch_id": "prose-step0011-a6d286bb6acc",
+      "replayed_batch_id": "prose-step0011-a6d286bb6acc",
+      "original_hash": "a6d286bb6accc2f13bddd7ddc908050bb38a070031872a9957bc8895213c2633",
+      "replayed_hash": "a6d286bb6accc2f13bddd7ddc908050bb38a070031872a9957bc8895213c2633",
+      "match": true
+    },
+    {
+      "step": 12,
+      "lane": "code",
+      "original_batch_id": "code-step0012-6fbae414110e",
+      "replayed_batch_id": "code-step0012-6fbae414110e",
+      "original_hash": "6fbae414110eb487a437232f4a69e0994fe26bcc2821567d1c13c7dc2d6600a8",
+      "replayed_hash": "6fbae414110eb487a437232f4a69e0994fe26bcc2821567d1c13c7dc2d6600a8",
+      "match": true
+    },
+    {
+      "step": 13,
+      "lane": "code",
+      "original_batch_id": "code-step0013-aefc93ee179c",
+      "replayed_batch_id": "code-step0013-aefc93ee179c",
+      "original_hash": "aefc93ee179cc401983d33280d64306ff9b03d5837754ead3738459677d08c3f",
+      "replayed_hash": "aefc93ee179cc401983d33280d64306ff9b03d5837754ead3738459677d08c3f",
+      "match": true
+    }
+  ]
+}

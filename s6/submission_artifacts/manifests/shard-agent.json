@@ -1,0 +1,538 @@
+{
+  "shard_id": "shard-agent",
+  "lane": "agent",
+  "role": "train",
+  "path": "shard-agent.bin",
+  "sha256": "c3a30cd6125173d082dc51c8c86ff2993f12e2e18f9c0da748564f4ae3a1238f",
+  "token_count": 1878,
+  "dtype": "int32",
+  "tokenizer_name": "cl100k_base",
+  "tokenizer_hash": "34c24bb049a6fa00c2645bcdf6a19676ade6dd9ebc52086efd9876cc6115a52c",
+  "documents": [
+    {
+      "doc_id": "agent-glaive-0000",
+      "start": 0,
+      "end": 71,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 35
+        },
+        {
+          "role": "assistant",
+          "start": 35,
+          "end": 71
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0001",
+      "start": 71,
+      "end": 173,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 35
+        },
+        {
+          "role": "assistant",
+          "start": 35,
+          "end": 62
+        },
+        {
+          "role": "user",
+          "start": 62,
+          "end": 102
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0002",
+      "start": 173,
+      "end": 252,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 35
+        },
+        {
+          "role": "assistant",
+          "start": 35,
+          "end": 60
+        },
+        {
+          "role": "user",
+          "start": 60,
+          "end": 79
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0003",
+      "start": 252,
+      "end": 338,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 35
+        },
+        {
+          "role": "assistant",
+          "start": 35,
+          "end": 63
+        },
+        {
+          "role": "user",
+          "start": 63,
+          "end": 86
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0004",
+      "start": 338,
+      "end": 437,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 45
+        },
+        {
+          "role": "assistant",
+          "start": 45,
+          "end": 67
+        },
+        {
+          "role": "user",
+          "start": 67,
+          "end": 99
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0005",
+      "start": 437,
+      "end": 560,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 63
+        },
+        {
+          "role": "assistant",
+          "start": 63,
+          "end": 83
+        },
+        {
+          "role": "assistant",
+          "start": 83,
+          "end": 123
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0006",
+      "start": 560,
+      "end": 652,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 43
+        },
+        {
+          "role": "assistant",
+          "start": 43,
+          "end": 83
+        },
+        {
+          "role": "user",
+          "start": 83,
+          "end": 92
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0007",
+      "start": 652,
+      "end": 719,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 31
+        },
+        {
+          "role": "assistant",
+          "start": 31,
+          "end": 67
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0008",
+      "start": 719,
+      "end": 811,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 48
+        },
+        {
+          "role": "assistant",
+          "start": 48,
+          "end": 60
+        },
+        {
+          "role": "assistant",
+          "start": 60,
+          "end": 92
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0009",
+      "start": 811,
+      "end": 922,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 45
+        },
+        {
+          "role": "assistant",
+          "start": 45,
+          "end": 81
+        },
+        {
+          "role": "user",
+          "start": 81,
+          "end": 111
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0010",
+      "start": 922,
+      "end": 1014,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 35
+        },
+        {
+          "role": "assistant",
+          "start": 35,
+          "end": 66
+        },
+        {
+          "role": "user",
+          "start": 66,
+          "end": 92
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0011",
+      "start": 1014,
+      "end": 1136,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "role": "user",
+          "start": 16,
+          "end": 63
+        },
+        {
+          "role": "assistant",
+          "start": 63,
+          "end": 99
+        },
+        {
+          "role": "user",
+          "start": 99,
+          "end": 122
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0012",
+      "start": 1136,
+      "end": 1242,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "role": "user",
+          "start": 16,
+          "end": 53
+        },
+        {
+          "role": "assistant",
+          "start": 53,
+          "end": 87
+        },
+        {
+          "role": "user",
+          "start": 87,
+          "end": 106
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0013",
+      "start": 1242,
+      "end": 1342,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 34
+        },
+        {
+          "role": "assistant",
+          "start": 34,
+          "end": 59
+        },
+        {
+          "role": "user",
+          "start": 59,
+          "end": 100
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0014",
+      "start": 1342,
+      "end": 1445,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "role": "user",
+          "start": 16,
+          "end": 45
+        },
+        {
+          "role": "assistant",
+          "start": 45,
+          "end": 78
+        },
+        {
+          "role": "user",
+          "start": 78,
+          "end": 103
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0015",
+      "start": 1445,
+      "end": 1519,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 36
+        },
+        {
+          "role": "assistant",
+          "start": 36,
+          "end": 63
+        },
+        {
+          "role": "user",
+          "start": 63,
+          "end": 74
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0016",
+      "start": 1519,
+      "end": 1607,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "role": "user",
+          "start": 16,
+          "end": 42
+        },
+        {
+          "role": "assistant",
+          "start": 42,
+          "end": 71
+        },
+        {
+          "role": "user",
+          "start": 71,
+          "end": 88
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0017",
+      "start": 1607,
+      "end": 1714,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 35
+        },
+        {
+          "role": "assistant",
+          "start": 35,
+          "end": 73
+        },
+        {
+          "role": "user",
+          "start": 73,
+          "end": 107
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0018",
+      "start": 1714,
+      "end": 1813,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 16
+        },
+        {
+          "role": "user",
+          "start": 16,
+          "end": 46
+        },
+        {
+          "role": "assistant",
+          "start": 46,
+          "end": 76
+        },
+        {
+          "role": "user",
+          "start": 76,
+          "end": 99
+        }
+      ]
+    },
+    {
+      "doc_id": "agent-glaive-0019",
+      "start": 1813,
+      "end": 1878,
+      "turns": [
+        {
+          "role": "system",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "role": "user",
+          "start": 20,
+          "end": 30
+        },
+        {
+          "role": "assistant",
+          "start": 30,
+          "end": 65
+        }
+      ]
+    }
+  ]
+}

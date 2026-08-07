@@ -1,0 +1,8 @@
+{
+  "path": "/Users/pradeep/AL/ERAv5/s6/submission_artifacts/checkpoints/checkpoint_step0040.pt",
+  "step": 40,
+  "run_id": "main",
+  "sha256": "3c668b63bf910b402951b52256de180e6af7518e712d98d2e93dfa980776cd5f",
+  "consumption_offset": 40,
+  "learning_offset": 30
+}

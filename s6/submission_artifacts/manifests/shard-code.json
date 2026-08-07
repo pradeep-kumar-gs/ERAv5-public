@@ -1,0 +1,313 @@
+{
+  "shard_id": "shard-code",
+  "lane": "code",
+  "role": "train",
+  "path": "shard-code.bin",
+  "sha256": "f18f89092bda9cee81d4d0c2d3a6ad4f81ead47d83e74f7bd00b9480d94d1c20",
+  "token_count": 1488,
+  "dtype": "int32",
+  "tokenizer_name": "cl100k_base",
+  "tokenizer_hash": "34c24bb049a6fa00c2645bcdf6a19676ade6dd9ebc52086efd9876cc6115a52c",
+  "documents": [
+    {
+      "doc_id": "code-commitpack-0000",
+      "start": 0,
+      "end": 12,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0001",
+      "start": 12,
+      "end": 47,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0002",
+      "start": 47,
+      "end": 108,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0003",
+      "start": 108,
+      "end": 119,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0004",
+      "start": 119,
+      "end": 166,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0005",
+      "start": 166,
+      "end": 202,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0006",
+      "start": 202,
+      "end": 213,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0007",
+      "start": 213,
+      "end": 223,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0008",
+      "start": 223,
+      "end": 265,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0009",
+      "start": 265,
+      "end": 281,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0010",
+      "start": 281,
+      "end": 297,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0011",
+      "start": 297,
+      "end": 308,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0012",
+      "start": 308,
+      "end": 355,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0013",
+      "start": 355,
+      "end": 393,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0014",
+      "start": 393,
+      "end": 404,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0015",
+      "start": 404,
+      "end": 415,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0016",
+      "start": 415,
+      "end": 426,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0017",
+      "start": 426,
+      "end": 471,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0018",
+      "start": 471,
+      "end": 550,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0019",
+      "start": 550,
+      "end": 577,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0020",
+      "start": 577,
+      "end": 601,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0021",
+      "start": 601,
+      "end": 627,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0022",
+      "start": 627,
+      "end": 638,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0023",
+      "start": 638,
+      "end": 677,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0024",
+      "start": 677,
+      "end": 688,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0025",
+      "start": 688,
+      "end": 703,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0026",
+      "start": 703,
+      "end": 751,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0027",
+      "start": 751,
+      "end": 797,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0028",
+      "start": 797,
+      "end": 830,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0029",
+      "start": 830,
+      "end": 871,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0030",
+      "start": 871,
+      "end": 920,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0031",
+      "start": 920,
+      "end": 984,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0032",
+      "start": 984,
+      "end": 995,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0033",
+      "start": 995,
+      "end": 1031,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0034",
+      "start": 1031,
+      "end": 1056,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0035",
+      "start": 1056,
+      "end": 1064,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0036",
+      "start": 1064,
+      "end": 1119,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0037",
+      "start": 1119,
+      "end": 1165,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0038",
+      "start": 1165,
+      "end": 1233,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0039",
+      "start": 1233,
+      "end": 1251,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0040",
+      "start": 1251,
+      "end": 1262,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0041",
+      "start": 1262,
+      "end": 1270,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0042",
+      "start": 1270,
+      "end": 1281,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0043",
+      "start": 1281,
+      "end": 1292,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0044",
+      "start": 1292,
+      "end": 1300,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0045",
+      "start": 1300,
+      "end": 1346,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0046",
+      "start": 1346,
+      "end": 1385,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0047",
+      "start": 1385,
+      "end": 1421,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0048",
+      "start": 1421,
+      "end": 1463,
+      "turns": []
+    },
+    {
+      "doc_id": "code-commitpack-0049",
+      "start": 1463,
+      "end": 1488,
+      "turns": []
+    }
+  ]
+}

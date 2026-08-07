@@ -1,0 +1,802 @@
+[
+  {
+    "step": 1,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 2,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 3,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 4,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 5,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 6,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 7,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 8,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 9,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 10,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 11,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 12,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 13,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 14,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 15,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 16,
+    "stage": "warmup",
+    "weights": {
+      "prose": 0.7,
+      "code": 0.2,
+      "agent": 0.1
+    },
+    "eligible_lanes": [
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.1
+    }
+  },
+  {
+    "step": 17,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 18,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 19,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 20,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 21,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 22,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 23,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 24,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 25,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 26,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 27,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 28,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 29,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 30,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 31,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 32,
+    "stage": "mid",
+    "weights": {
+      "prose": 0.4,
+      "code": 0.35,
+      "agent": 0.25
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.175
+    }
+  },
+  {
+    "step": 33,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 34,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 35,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 36,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 37,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 38,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 39,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 40,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 41,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 42,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 43,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 44,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 45,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 46,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 47,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  },
+  {
+    "step": 48,
+    "stage": "anneal",
+    "weights": {
+      "prose": 0.2,
+      "code": 0.5,
+      "agent": 0.3
+    },
+    "eligible_lanes": [
+      "agent",
+      "code",
+      "prose"
+    ],
+    "protected_floor": {
+      "code": 0.25
+    }
+  }
+]

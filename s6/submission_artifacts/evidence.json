@@ -1,0 +1,65 @@
+{
+  "overall_pass": true,
+  "requirements": {
+    "Tokenizer integrity": {
+      "passed": true,
+      "detail": "4 shard manifests hash-verified against the live tokenizer",
+      "evidence": "manifests/shard-*.json (sha256 + tokenizer_hash), re-verified against shards/*.bin"
+    },
+    "Evaluation firewall": {
+      "passed": true,
+      "detail": "0 eval-lane rows in consumption ledger; block event logged=True",
+      "evidence": "run.log [PASS] eval_shard_blocked; ledgers/consumption_ledger.jsonl"
+    },
+    "Packing correctness": {
+      "passed": true,
+      "detail": "all 51 ledger batches (main + fork) structurally rebuilt from segments and mask-checked",
+      "evidence": "ledgers/consumption_ledger.jsonl segments, reassembled via packing.rebuild_batch"
+    },
+    "Mixture compliance": {
+      "passed": true,
+      "detail": "protected floor never breached in any stage",
+      "evidence": "manifests/mixture_schedule.json vs. accepted rows in ledgers/consumption_ledger.jsonl",
+      "planned_vs_actual": {
+        "warmup": {
+          "prose": 9,
+          "code": 6
+        },
+        "mid": {
+          "code": 4,
+          "prose": 4,
+          "agent": 2
+        },
+        "anneal": {
+          "code": 4,
+          "prose": 2
+        }
+      }
+    },
+    "OPUS audit trail": {
+      "passed": true,
+      "detail": "51 candidate decisions logged (one per consumption-ledger row); distribution={'ACCEPT': 28, 'PROTECTED_FLOOR_OVERRIDE': 6, 'DEFER': 1, 'REJECT': 16}",
+      "evidence": "ledgers/opus_audit.jsonl (+ ledgers/fork/opus_audit.jsonl)"
+    },
+    "Crash recovery": {
+      "passed": true,
+      "detail": "4 post-crash batches independently compared against the pre-crash expected batch ids/hashes, all_match=True",
+      "evidence": "ledgers/resume_report.json; run.log [PASS] resume_next_batch_matched / checkpoint_saved"
+    },
+    "Replay": {
+      "passed": true,
+      "detail": "4 ledger records replayed, all_match=True",
+      "evidence": "ledgers/replay_report.json; run.log [PASS] replay_hash_matched"
+    },
+    "Learning trace": {
+      "passed": true,
+      "detail": "31 learning-ledger rows all trace back to a consumption-ledger batch id",
+      "evidence": "ledgers/learning_ledger.jsonl joined to ledgers/consumption_ledger.jsonl on batch_id"
+    },
+    "Throughput": {
+      "passed": true,
+      "detail": "performance.json packing_utilization=0.9575, independently recomputed from the ledger=0.9575",
+      "evidence": "performance.json; recomputed from ledgers/consumption_ledger.jsonl"
+    }
+  }
+}

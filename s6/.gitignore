@@ -1,0 +1,6 @@
+# Regenerable via `python3 run_demo.py`; too large for git (untied 100k-vocab
+# embedding + Adam optimizer state -> ~148MB per checkpoint, over GitHub's
+# 100MB file limit). All other evidence (ledgers, manifests, evidence.json/md,
+# run.log, performance.json) stays committed.
+submission_artifacts/checkpoints/*.pt
+submission_artifacts/checkpoints/fork/*.pt
