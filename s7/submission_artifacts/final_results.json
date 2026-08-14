@@ -1,0 +1,32 @@
+{
+  "dense": {
+    "label": "Dense table (course baseline)",
+    "num_params": 151680,
+    "final_id_acc_mean": 0.8994999925295512,
+    "final_id_acc_std": 0.06580400584544283,
+    "final_ood_acc_mean": 0.00783333337555329,
+    "final_ood_acc_std": 0.0013123345847948916,
+    "final_magnitude_ood_acc_mean": 0.0,
+    "final_magnitude_ood_acc_std": 0.0
+  },
+  "kron_v1": {
+    "label": "Kronecker V1 (byte codec only)",
+    "num_params": 650368,
+    "final_id_acc_mean": 0.9994999965031942,
+    "final_id_acc_std": 0.0007071117264167727,
+    "final_ood_acc_mean": 0.0554999994734923,
+    "final_ood_acc_std": 0.0025495102964585644,
+    "final_magnitude_ood_acc_mean": 0.00016666667458290854,
+    "final_magnitude_ood_acc_std": 0.00023570227159077248
+  },
+  "kron_v2": {
+    "label": "Kronecker V2 (byte + meaning channel)",
+    "num_params": 650560,
+    "final_id_acc_mean": 1.0,
+    "final_id_acc_std": 0.0,
+    "final_ood_acc_mean": 0.04466666677035391,
+    "final_ood_acc_std": 0.030720062381472145,
+    "final_magnitude_ood_acc_mean": 0.0,
+    "final_magnitude_ood_acc_std": 0.0
+  }
+}

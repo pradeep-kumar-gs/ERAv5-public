@@ -1,0 +1,17 @@
+[20:24:42] run started
+[20:24:42] algebra proof: add_max_rel_err=3.98e-05 sub_max_rel_err=1.29e-05
+[20:24:42] algebra proof: mul_max_rel_err=1.79e-04 div_max_rel_err=1.78e-04
+[20:24:42] [PASS] algebra_proof_exact
+[20:24:42] power/bilinear boundary: outer_product_max_abs_err=0.00e+00 concat_err_over_outer_err=8.85e+12
+[20:24:42] [PASS] power_needs_bilinear_readout
+[20:24:42] training 3 arms x 3 seeds ...
+[20:34:40] training complete
+[20:34:40] [RESULT] dense: id_acc=0.899 ood_acc=0.008 magnitude_ood_acc=0.000 params=151680
+[20:34:40] [RESULT] kron_v1: id_acc=0.999 ood_acc=0.055 magnitude_ood_acc=0.000 params=650368
+[20:34:40] [RESULT] kron_v2: id_acc=1.000 ood_acc=0.045 magnitude_ood_acc=0.000 params=650560
+[20:34:40] [RESULT] dense grad mass: even=27471.4 odd=0.000000 magnitude_high=0.000000
+[20:34:40] [PASS] odd_rows_never_received_gradient
+[20:34:40] [PASS] magnitude_band_rows_never_received_gradient
+[20:34:40] wrote accuracy_curves.png
+[20:34:40] wrote gradient_mass.png
+[20:34:40] run complete

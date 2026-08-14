@@ -1,0 +1,29 @@
+{
+  "eps": 1e-06,
+  "norm": 1000.0,
+  "additive_group": {
+    "n": 5000,
+    "add_max_rel_err": 3.975882450496312e-05,
+    "add_mean_rel_err": 7.504047891300214e-08,
+    "sub_max_rel_err": 1.2874603271484375e-05,
+    "sub_mean_rel_err": 5.07463525624404e-08
+  },
+  "multiplicative_group": {
+    "n": 5000,
+    "mul_max_rel_err": 0.00017863453107769766,
+    "mul_mean_rel_err": 5.138974375520393e-07,
+    "div_max_rel_err": 0.000177978458817312,
+    "div_mean_rel_err": 4.931310959503401e-07
+  },
+  "power_bilinear_boundary": {
+    "n": 2000,
+    "outer_product_max_abs_err": 0.0,
+    "power_reconstruction_max_rel_err": 1.1294427279378474e-15,
+    "best_linear_on_concat_max_abs_err": 8.85345898555518,
+    "concat_err_over_outer_err": 8853458985555.18
+  },
+  "worked_example": {
+    "9+9": 18.0,
+    "9*9": 81.00000762939453
+  }
+}
