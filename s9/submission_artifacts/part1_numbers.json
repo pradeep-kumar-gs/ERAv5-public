@@ -1,0 +1,14 @@
+{
+  "1_padding_contributing_tokens": {
+    "with_mask": 14,
+    "without_mask": 24
+  },
+  "2_doc_boundary_loss_delta": -0.015720367431640625,
+  "3_untrained_perplexity": 6310.375162108038,
+  "4_tied_head_params": 13319040,
+  "5_untied_head_params": 15623040,
+  "6_peak_memory_ordinary_MB": 3451.695616,
+  "7_peak_memory_chunked_MB": 480.392192,
+  "peak_memory_ratio": 7.185161777150616,
+  "device_used": "mps"
+}
