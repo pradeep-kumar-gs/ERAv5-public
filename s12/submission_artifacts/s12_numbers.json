@@ -1,0 +1,417 @@
+{
+ "model": {
+  "n_params": 212480,
+  "padded_at_32": 212480,
+  "units": 6,
+  "d": 64,
+  "n_layer": 4,
+  "global_batch": 32,
+  "seq": 64
+ },
+ "collectives": {
+  "world": 32,
+  "rs_ag_equals_ar": true,
+  "max_err_vs_gloo": 7.62939453125e-06,
+  "bytes_over_input": {
+   "reduce_scatter": 0.96875,
+   "all_gather": 0.96875,
+   "all_reduce": 1.9375
+  }
+ },
+ "memory_N32": [
+  {
+   "stage": "dp",
+   "per_cat": {
+    "param_bf16": 2.0,
+    "grad_bf16": 2.0,
+    "master": 4.0,
+    "adam_m": 4.0,
+    "adam_v": 4.0
+   },
+   "total": 16.0,
+   "formula": 16.0,
+   "peak": 16.0,
+   "identical_across_ranks": true,
+   "activation_bytes": 1082628
+  },
+  {
+   "stage": "zero1",
+   "per_cat": {
+    "param_bf16": 2.0,
+    "grad_bf16": 2.0,
+    "master": 0.125,
+    "adam_m": 0.125,
+    "adam_v": 0.125
+   },
+   "total": 4.375,
+   "formula": 4.375,
+   "peak": 4.375,
+   "identical_across_ranks": true,
+   "activation_bytes": 1082628
+  },
+  {
+   "stage": "zero2",
+   "per_cat": {
+    "param_bf16": 2.0,
+    "grad_bf16": 0.0625,
+    "master": 0.125,
+    "adam_m": 0.125,
+    "adam_v": 0.125
+   },
+   "total": 2.4375,
+   "formula": 2.4375,
+   "peak": 2.907981927710843,
+   "identical_across_ranks": true,
+   "activation_bytes": 1082628
+  },
+  {
+   "stage": "zero3",
+   "per_cat": {
+    "param_bf16": 0.0625,
+    "grad_bf16": 0.0625,
+    "master": 0.125,
+    "adam_m": 0.125,
+    "adam_v": 0.125
+   },
+   "total": 0.5,
+   "formula": 0.5,
+   "peak": 1.4409638554216868,
+   "identical_across_ranks": true,
+   "activation_bytes": 1082628
+  }
+ ],
+ "comm_N32": [
+  {
+   "stage": "dp",
+   "total_P": 1.9375,
+   "formula_P": 1.9375,
+   "parts": {
+    "grad_all_reduce": 1.9375
+   }
+  },
+  {
+   "stage": "zero1",
+   "total_P": 1.9375,
+   "formula_P": 1.9375,
+   "parts": {
+    "grad_reduce_scatter": 0.96875,
+    "param_all_gather_update": 0.96875
+   }
+  },
+  {
+   "stage": "zero2",
+   "total_P": 1.9375,
+   "formula_P": 1.9375,
+   "parts": {
+    "grad_reduce_scatter": 0.96875,
+    "param_all_gather_update": 0.96875
+   }
+  },
+  {
+   "stage": "zero3",
+   "total_P": 2.90625,
+   "formula_P": 2.90625,
+   "parts": {
+    "param_all_gather_fwd": 0.96875,
+    "param_all_gather_bwd": 0.96875,
+    "grad_reduce_scatter": 0.96875
+   }
+  }
+ ],
+ "bit_identical_bf16_N32": true,
+ "dp_vs_single": {
+  "fp32": {
+   "mean": 1.4638900756835937e-05,
+   "max": 0.00017595291137695312,
+   "final": 5.0067901611328125e-06
+  },
+  "bf16": {
+   "mean": 0.025873621304829914,
+   "max": 0.2473163604736328,
+   "final": 0.030184268951416016
+  },
+  "fp32_dp_eq_zero3": true
+ },
+ "reduce_dtype": {
+  "full_fp32_N1_tail": 2.9287401676177978,
+  "runs": {
+   "N1_bf16": {
+    "tail_loss": 2.922991418838501,
+    "dp_eq_zero2": true,
+    "dp_sent_P": 0.0,
+    "zero2_sent_P": 0.0,
+    "zero2_bytes_per_weight": 16.0,
+    "gap_to_fp32": 0.005748748779296875
+   },
+   "N1_fp32": {
+    "tail_loss": 2.922991418838501,
+    "dp_eq_zero2": true,
+    "dp_sent_P": 0.0,
+    "zero2_sent_P": 0.0,
+    "zero2_bytes_per_weight": 18.0,
+    "gap_to_fp32": 0.005748748779296875
+   },
+   "N4_bf16": {
+    "tail_loss": 2.945808243751526,
+    "dp_eq_zero2": true,
+    "dp_sent_P": 1.5,
+    "zero2_sent_P": 1.5,
+    "zero2_bytes_per_weight": 5.5,
+    "gap_to_fp32": 0.017068076133728294
+   },
+   "N4_fp32": {
+    "tail_loss": 2.927940773963928,
+    "dp_eq_zero2": true,
+    "dp_sent_P": 3.0,
+    "zero2_sent_P": 2.25,
+    "zero2_bytes_per_weight": 6.0,
+    "gap_to_fp32": 0.0007993936538697177
+   },
+   "N32_bf16": {
+    "tail_loss": 2.950783133506775,
+    "dp_eq_zero2": true,
+    "dp_sent_P": 1.9375,
+    "zero2_sent_P": 1.9375,
+    "zero2_bytes_per_weight": 2.4375,
+    "gap_to_fp32": 0.02204296588897714
+   },
+   "N32_fp32": {
+    "tail_loss": 2.945281410217285,
+    "dp_eq_zero2": true,
+    "dp_sent_P": 3.875,
+    "zero2_sent_P": 2.90625,
+    "zero2_bytes_per_weight": 2.5,
+    "gap_to_fp32": 0.016541242599487305
+   }
+  }
+ },
+ "sweep": {
+  "N": [
+   1,
+   2,
+   4,
+   8,
+   16,
+   32
+  ],
+  "bytes_per_weight": {
+   "dp": [
+    16.0,
+    16.0,
+    16.0,
+    16.0,
+    16.0,
+    16.0
+   ],
+   "zero1": [
+    16.0,
+    10.0,
+    7.0,
+    5.5,
+    4.75,
+    4.375
+   ],
+   "zero2": [
+    16.0,
+    9.0,
+    5.5,
+    3.75,
+    2.875,
+    2.4375
+   ],
+   "zero3": [
+    16.0,
+    8.0,
+    4.0,
+    2.0,
+    1.0,
+    0.5
+   ]
+  },
+  "fit": {
+   "dp": {
+    "replicated": 16.000000000000004,
+    "sharded": 8.848294844790682e-15
+   },
+   "zero1": {
+    "replicated": 4.0,
+    "sharded": 12.000000000000005
+   },
+   "zero2": {
+    "replicated": 1.9999999999999987,
+    "sharded": 14.000000000000002
+   },
+   "zero3": {
+    "replicated": -1.4503892858778864e-15,
+    "sharded": 16.000000000000004
+   }
+  }
+ },
+ "ladder_30B": {
+  "gib": {
+   "dp": {
+    "8": 447.0348358154298,
+    "16": 447.0348358154298,
+    "32": 447.0348358154298,
+    "64": 447.0348358154298
+   },
+   "zero1": {
+    "8": 153.66822481155398,
+    "16": 132.7134668827057,
+    "32": 122.23608791828156,
+    "64": 116.99739843606949
+   },
+   "zero2": {
+    "8": 104.7737896442413,
+    "16": 80.32657206058498,
+    "32": 68.10296326875682,
+    "64": 61.99115887284275
+   },
+   "zero3": {
+    "8": 55.87935447692868,
+    "16": 27.93967723846432,
+    "32": 13.96983861923214,
+    "64": 6.98491930961605
+   }
+  },
+  "card_gib": 74.50580596923828,
+  "min_gpus": {
+   "dp": null,
+   "zero1": null,
+   "zero2": 22,
+   "zero3": 6
+  }
+ },
+ "time_N32": [
+  {
+   "stage": "dp",
+   "step_ms": 277.468552919533,
+   "fwd_ms": 5.6683009289246975,
+   "bwd_ms": 17.337180243289207,
+   "comm_ms": 252.56499795021475,
+   "adam_ms": 0.9018850726627942,
+   "adam_elems": 212480,
+   "comm_over_compute": 10.141724675909957
+  },
+  {
+   "stage": "zero1",
+   "step_ms": 289.423688371871,
+   "fwd_ms": 6.2780567554125755,
+   "bwd_ms": 18.987831386703906,
+   "comm_ms": 263.18450765460636,
+   "adam_ms": 0.42095673174556175,
+   "adam_elems": 6640,
+   "comm_over_compute": 10.030210565280292
+  },
+  {
+   "stage": "zero2",
+   "step_ms": 305.19257631379423,
+   "fwd_ms": 4.506956304935713,
+   "bwd_ms": 185.1722921486067,
+   "comm_ms": 287.6248407168501,
+   "adam_ms": 0.5330020099508743,
+   "adam_elems": 6640,
+   "comm_over_compute": 16.372334335842396
+  },
+  {
+   "stage": "zero3",
+   "step_ms": 420.0521618526934,
+   "fwd_ms": 133.1143702135517,
+   "bwd_ms": 286.6581192916501,
+   "comm_ms": 401.9587425934396,
+   "adam_ms": 0.24455214307981177,
+   "adam_elems": 6640,
+   "comm_over_compute": 22.21574246602718
+  }
+ ],
+ "offload": {
+  "device": 2.0625,
+  "host": 0.375,
+  "pcie": 0.125,
+  "at_30B": {
+   "8": {
+    "device_gib": 62.8642737865448,
+    "host_gib_per_gpu": 41.90951585769653,
+    "pcie_s": 0.25
+   },
+   "32": {
+    "device_gib": 57.62558430433273,
+    "host_gib_per_gpu": 10.477378964424133,
+    "pcie_s": 0.0625
+   }
+  },
+  "adam_weights_per_s_one_core": 235595428.33174726
+ },
+ "buckets_N8": {
+  "k1_serial": {
+   "step_ms": 149.42549981351476,
+   "comm_ms": 45.51630601599754,
+   "transfers": 14
+  },
+  "k1_overlap": {
+   "step_ms": 149.14587519597262,
+   "comm_ms": 108.39890656898206,
+   "transfers": 14
+  },
+  "k2_serial": {
+   "step_ms": 141.5895581973018,
+   "comm_ms": 34.566210426419275,
+   "transfers": 7
+  },
+  "k2_overlap": {
+   "step_ms": 122.50886721594725,
+   "comm_ms": 69.71087124875339,
+   "transfers": 7
+  },
+  "k4_serial": {
+   "step_ms": 124.81371659960132,
+   "comm_ms": 23.319015755987493,
+   "transfers": 4
+  },
+  "k4_overlap": {
+   "step_ms": 128.52955019916408,
+   "comm_ms": 58.819467679131776,
+   "transfers": 4
+  },
+  "k7_serial": {
+   "step_ms": 117.96995059994515,
+   "comm_ms": 15.693556123005694,
+   "transfers": 2
+  },
+  "k7_overlap": {
+   "step_ms": 111.77683320711367,
+   "comm_ms": 25.294522071635583,
+   "transfers": 2
+  },
+  "k14_serial": {
+   "step_ms": 114.47671699570492,
+   "comm_ms": 12.318507352392771,
+   "transfers": 1
+  },
+  "k14_overlap": {
+   "step_ms": 114.03695840272121,
+   "comm_ms": 11.920459398606909,
+   "transfers": 1
+  },
+  "fixed_cost_ms": 2.5664588283695893
+ },
+ "buckets_model": {
+  "best": {
+   "H100_alpha0.0": 1,
+   "H100_alpha0.05": 1,
+   "B200_alpha0.0": 1,
+   "B200_alpha0.05": 2
+  },
+  "share_h100_k2": 0.8333333333333333,
+  "no_overlap_step": {
+   "H100": 9.5,
+   "B200": 5.52
+  }
+ },
+ "runtime_s": 293.6190969944,
+ "machine": {
+  "torch": "2.14.1",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "cores": 10
+ }
+}
