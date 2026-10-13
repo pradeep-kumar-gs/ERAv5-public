@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attention, Chronologically</title>
+<meta name="description" content="Every major attention mechanism from 2014 to 2026 in launch order, each explained as an answer to the bill the previous one left behind. Dates checked against primary sources.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23b5452b'/><path d='M7 24 16 8l9 16' stroke='white' stroke-width='3' fill='none'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="brand">Attention, chronologically</span>
+    <nav aria-label="Sections">
+      <a href="#start">Start</a><a href="#bills">Bills</a><a href="#timeline">Timeline</a><a href="#reading">Reading it</a><a href="#casestudy">Case study</a><a href="#corrections">Corrections</a><a href="#sources">Sources</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" aria-label="Toggle colour theme">◐</button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="kicker">How does attention work now?</div>
+    <h1>Every attention mechanism is someone reading the bill and trying to pay less.</h1>
+    <p class="lede">Vanilla attention was never wrong. It was expensive. This page lays out <span id="n-mech">52</span> mechanisms in the order they actually appeared, from 2014 to 2026. Each one is explained as an answer to a problem that existed at that moment, with what it bought, what it gave up, and when you would actually pick it.</p>
+    <div class="arc" aria-label="The field's priorities over time">
+      <span>2017 · exactness</span><i>→</i><span>2019 · length, memory back</span><i>→</i><span>2022 · exactness again</span><i>→</i><span>2023 · length via position</span><i>→</i><span>2024 · memory back again</span><i>→</i><span>2025 · mix, sparsify, compress</span>
+    </div>
+    <p class="small muted">Every date is checked against the original paper or release (see <a href="#sources">Sources</a>). Where this page disagrees with the course notes, it says so in <a href="#corrections">Corrections</a>.</p>
+  </div>
+
+  <section class="block" id="start">
+    <div class="wrap">
+      <div class="kicker">Section 1 · the baseline</div>
+      <h2>Start here: plain scaled dot-product attention</h2>
+      <p class="muted narrow">Each token asks a question (query), every token advertises what it holds (key), and the best matches contribute their information (value). Nothing after 2017 makes sense until this is obvious.</p>
+      <div class="widget" id="w-standard"></div>
+    </div>
+  </section>
+
+  <section class="block" id="bills">
+    <div class="wrap">
+      <div class="kicker">Section 2 · the two bills</div>
+      <h2>What vanilla attention costs</h2>
+      <p class="muted narrow"><b>Compute</b> grows as T², because every query scores every key. <b>KV-cache memory</b> grows as T, per layer and per user, because decoding keeps every earlier key and value. Every mechanism on the timeline attacks one bill, the other, or position, which decides whether you can even reach a longer T.</p>
+      <div class="widget" id="w-kv"></div>
+    </div>
+  </section>
+
+  <section class="block" id="timeline">
+    <div class="wrap">
+      <div class="kicker">Section 3 · the timeline</div>
+      <h2>In launch order</h2>
+      <p class="muted narrow">Each dot is a mechanism, placed at its first public date and in its family's lane. The shaded bands are eras, each labelled with what the field wanted at the time. Click a dot to jump to its card.</p>
+      <div class="overview" id="overview"></div>
+      <div class="small muted" id="ov-hover">Hover or tap a dot.</div>
+      <div class="filters" id="filters"></div>
+      <div class="timeline" id="cards"></div>
+    </div>
+  </section>
+
+  <section class="block" id="reading"><div class="wrap narrow" id="reading-body"></div></section>
+  <section class="block" id="casestudy"><div class="wrap narrow" id="case-body"></div></section>
+  <section class="block" id="corrections"><div class="wrap narrow" id="corr-body"></div></section>
+  <section class="block" id="sources"><div class="wrap" id="src-body"></div></section>
+</main>
+
+<footer><div class="wrap">Built for ERA V5 Session 8. Static site: no tracking, no build step. Dates verified with <code>scripts/verify_dates.py</code>; widget maths tested in <code>tests/test_lib.mjs</code>.</div></footer>
+<noscript><div class="noscript wrap">This page renders its timeline from data/mechanisms.json and needs JavaScript.</div></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>
