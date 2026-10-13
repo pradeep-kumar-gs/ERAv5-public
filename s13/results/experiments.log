@@ -1,0 +1,291 @@
+[sweep_standard] step 50/305 tok 0.8M loss 5.8670 gnorm 0.66 13788 tok/s peak 5.47 GiB
+[sweep_standard] step 100/305 tok 1.6M loss 3.9528 gnorm 0.54 13682 tok/s peak 5.47 GiB
+[sweep_standard] step 150/305 tok 2.5M loss 3.5013 gnorm 0.59 13292 tok/s peak 5.47 GiB
+[sweep_standard] step 200/305 tok 3.3M loss 3.1773 gnorm 0.71 13407 tok/s peak 5.47 GiB
+[sweep_standard] step 250/305 tok 4.1M loss 2.9531 gnorm 0.74 13359 tok/s peak 5.47 GiB
+[sweep_standard] step 300/305 tok 4.9M loss 2.8484 gnorm 0.64 13449 tok/s peak 5.47 GiB
+[sweep_standard] step 305/305 tok 5.0M loss 2.7771 gnorm 0.61 13459 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 50/305 tok 0.8M loss 6.2517 gnorm 0.86 13759 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 100/305 tok 1.6M loss 4.1026 gnorm 0.50 13562 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 150/305 tok 2.5M loss 3.6702 gnorm 0.65 13250 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 200/305 tok 3.3M loss 3.3354 gnorm 0.84 13157 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 250/305 tok 4.1M loss 3.0870 gnorm 0.78 13066 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 300/305 tok 4.9M loss 2.9721 gnorm 0.69 13034 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.125] step 305/305 tok 5.0M loss 2.9026 gnorm 0.71 13025 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 50/305 tok 0.8M loss 5.9983 gnorm 0.76 11962 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 100/305 tok 1.6M loss 3.9752 gnorm 0.61 11884 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 150/305 tok 2.5M loss 3.5189 gnorm 0.65 12457 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 200/305 tok 3.3M loss 3.1840 gnorm 0.72 12835 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 250/305 tok 4.1M loss 2.9574 gnorm 0.78 13102 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 300/305 tok 4.9M loss 2.8494 gnorm 0.69 13293 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25] step 305/305 tok 5.0M loss 2.7802 gnorm 0.70 13309 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 50/305 tok 0.8M loss 5.8897 gnorm 0.79 14477 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 100/305 tok 1.6M loss 3.9421 gnorm 0.72 14418 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 150/305 tok 2.5M loss 3.4882 gnorm 0.81 14387 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 200/305 tok 3.3M loss 3.1662 gnorm 0.71 14374 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 250/305 tok 4.1M loss 2.9446 gnorm 0.74 14254 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 300/305 tok 4.9M loss 2.8379 gnorm 0.71 14273 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.5] step 305/305 tok 5.0M loss 2.7660 gnorm 0.67 14273 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 50/305 tok 0.8M loss 5.8956 gnorm 1.08 14702 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 100/305 tok 1.6M loss 3.9536 gnorm 0.54 14723 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 150/305 tok 2.5M loss 3.5076 gnorm 0.73 14760 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 200/305 tok 3.3M loss 3.1731 gnorm 0.71 14785 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 250/305 tok 4.1M loss 2.9509 gnorm 0.84 14809 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 300/305 tok 4.9M loss 2.8448 gnorm 0.69 14831 tok/s peak 5.47 GiB
+[sweep_midpoint_h1.0] step 305/305 tok 5.0M loss 2.7766 gnorm 0.70 14833 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 50/305 tok 0.8M loss 6.0284 gnorm 0.88 15034 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 100/305 tok 1.6M loss 3.9989 gnorm 0.60 15032 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 150/305 tok 2.5M loss 3.5378 gnorm 0.57 14999 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 200/305 tok 3.3M loss 3.1989 gnorm 0.69 14996 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 250/305 tok 4.1M loss 2.9639 gnorm 0.69 14986 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 300/305 tok 4.9M loss 2.8542 gnorm 0.60 14973 tok/s peak 5.47 GiB
+[sweep_midpoint_h0.25_blend0.5] step 305/305 tok 5.0M loss 2.7833 gnorm 0.62 14968 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 50/305 tok 0.8M loss 6.1460 gnorm 0.85 15238 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 100/305 tok 1.6M loss 3.9872 gnorm 0.50 15196 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 150/305 tok 2.5M loss 3.5220 gnorm 0.54 15171 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 200/305 tok 3.3M loss 3.1903 gnorm 0.68 15187 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 250/305 tok 4.1M loss 2.9443 gnorm 0.65 15191 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 300/305 tok 4.9M loss 2.8294 gnorm 0.62 15178 tok/s peak 5.47 GiB
+[sweep_euler_h0.5] step 305/305 tok 5.0M loss 2.7516 gnorm 0.61 15179 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 50/305 tok 0.8M loss 6.2742 gnorm 1.44 15381 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 100/305 tok 1.6M loss 4.1310 gnorm 0.60 15324 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 150/305 tok 2.5M loss 3.6173 gnorm 0.55 15318 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 200/305 tok 3.3M loss 3.2725 gnorm 0.71 15318 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 250/305 tok 4.1M loss 3.0225 gnorm 0.74 15313 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 300/305 tok 4.9M loss 2.9067 gnorm 0.65 15319 tok/s peak 5.47 GiB
+[sweep_euler_h1.0] step 305/305 tok 5.0M loss 2.8325 gnorm 0.66 15319 tok/s peak 5.47 GiB
+[main_standard] step 50/3051 tok 0.8M loss 5.8670 gnorm 0.66 15254 tok/s peak 5.47 GiB
+[main_standard] step 100/3051 tok 1.6M loss 3.9546 gnorm 0.55 15352 tok/s peak 5.47 GiB
+[main_standard] step 150/3051 tok 2.5M loss 3.5090 gnorm 0.74 15385 tok/s peak 5.47 GiB
+[main_standard] step 200/3051 tok 3.3M loss 3.1873 gnorm 0.88 15373 tok/s peak 5.47 GiB
+[main_standard] step 250/3051 tok 4.1M loss 2.9568 gnorm 0.79 15373 tok/s peak 5.47 GiB
+[main_standard] step 300/3051 tok 4.9M loss 2.8228 gnorm 0.70 15396 tok/s peak 5.47 GiB
+[main_standard] step 350/3051 tok 5.7M loss 2.7032 gnorm 0.60 15402 tok/s peak 5.47 GiB
+[main_standard] step 400/3051 tok 6.6M loss 2.5879 gnorm 0.63 15415 tok/s peak 5.47 GiB
+[main_standard] step 450/3051 tok 7.4M loss 2.5082 gnorm 0.62 15425 tok/s peak 5.47 GiB
+[main_standard] step 500/3051 tok 8.2M loss 2.4397 gnorm 0.57 15453 tok/s peak 5.47 GiB
+[main_standard] step 550/3051 tok 9.0M loss 2.3744 gnorm 0.58 15509 tok/s peak 5.47 GiB
+[main_standard] step 600/3051 tok 9.8M loss 2.3430 gnorm 0.62 15564 tok/s peak 5.47 GiB
+[main_standard] step 650/3051 tok 10.6M loss 2.2885 gnorm 0.56 15611 tok/s peak 5.47 GiB
+[main_standard] step 700/3051 tok 11.5M loss 2.2389 gnorm 0.55 15651 tok/s peak 5.47 GiB
+[main_standard] step 750/3051 tok 12.3M loss 2.1958 gnorm 0.51 15686 tok/s peak 5.47 GiB
+[main_standard] step 800/3051 tok 13.1M loss 2.1656 gnorm 0.53 15717 tok/s peak 5.47 GiB
+[main_standard] step 850/3051 tok 13.9M loss 2.1470 gnorm 0.56 15744 tok/s peak 5.47 GiB
+[main_standard] step 900/3051 tok 14.7M loss 2.1146 gnorm 0.49 15769 tok/s peak 5.47 GiB
+[main_standard] step 950/3051 tok 15.6M loss 2.0949 gnorm 0.51 15790 tok/s peak 5.47 GiB
+[main_standard] step 1000/3051 tok 16.4M loss 2.0628 gnorm 0.50 15810 tok/s peak 5.47 GiB
+[main_standard] step 1050/3051 tok 17.2M loss 2.0214 gnorm 0.49 15828 tok/s peak 5.47 GiB
+[main_standard] step 1100/3051 tok 18.0M loss 2.0147 gnorm 0.45 15845 tok/s peak 5.47 GiB
+[main_standard] step 1150/3051 tok 18.8M loss 1.9833 gnorm 0.46 15859 tok/s peak 5.47 GiB
+[main_standard] step 1200/3051 tok 19.7M loss 1.9731 gnorm 0.44 15873 tok/s peak 5.47 GiB
+[main_standard] step 1250/3051 tok 20.5M loss 1.9529 gnorm 0.48 15886 tok/s peak 5.47 GiB
+[main_standard] step 1300/3051 tok 21.3M loss 1.9338 gnorm 0.49 15898 tok/s peak 5.47 GiB
+[main_standard] step 1350/3051 tok 22.1M loss 1.9181 gnorm 0.46 15908 tok/s peak 5.47 GiB
+[main_standard] step 1400/3051 tok 22.9M loss 1.9023 gnorm 0.43 15918 tok/s peak 5.47 GiB
+[main_standard] step 1450/3051 tok 23.8M loss 1.8847 gnorm 0.43 15928 tok/s peak 5.47 GiB
+[main_standard] step 1500/3051 tok 24.6M loss 1.8677 gnorm 0.42 15937 tok/s peak 5.47 GiB
+[main_standard] step 1550/3051 tok 25.4M loss 1.8542 gnorm 0.45 15945 tok/s peak 5.47 GiB
+[main_standard] step 1600/3051 tok 26.2M loss 1.8459 gnorm 0.44 15953 tok/s peak 5.47 GiB
+[main_standard] step 1650/3051 tok 27.0M loss 1.8241 gnorm 0.42 15960 tok/s peak 5.47 GiB
+[main_standard] step 1700/3051 tok 27.9M loss 1.8294 gnorm 0.41 15967 tok/s peak 5.47 GiB
+[main_standard] step 1750/3051 tok 28.7M loss 1.8055 gnorm 0.43 15973 tok/s peak 5.47 GiB
+[main_standard] step 1800/3051 tok 29.5M loss 1.7769 gnorm 0.44 15979 tok/s peak 5.47 GiB
+[main_standard] step 1850/3051 tok 30.3M loss 1.7736 gnorm 0.43 15985 tok/s peak 5.47 GiB
+[main_standard] step 1900/3051 tok 31.1M loss 1.7606 gnorm 0.42 15991 tok/s peak 5.47 GiB
+[main_standard] step 1950/3051 tok 31.9M loss 1.7739 gnorm 0.40 15996 tok/s peak 5.47 GiB
+[main_standard] step 2000/3051 tok 32.8M loss 1.7609 gnorm 0.42 16001 tok/s peak 5.47 GiB
+[main_standard] step 2050/3051 tok 33.6M loss 1.7193 gnorm 0.43 16006 tok/s peak 5.47 GiB
+[main_standard] step 2100/3051 tok 34.4M loss 1.7277 gnorm 0.43 16010 tok/s peak 5.47 GiB
+[main_standard] step 2150/3051 tok 35.2M loss 1.7224 gnorm 0.42 16014 tok/s peak 5.47 GiB
+[main_standard] step 2200/3051 tok 36.0M loss 1.7054 gnorm 0.43 16019 tok/s peak 5.47 GiB
+[main_standard] step 2250/3051 tok 36.9M loss 1.7001 gnorm 0.42 16022 tok/s peak 5.47 GiB
+[main_standard] step 2300/3051 tok 37.7M loss 1.6902 gnorm 0.42 16026 tok/s peak 5.47 GiB
+[main_standard] step 2350/3051 tok 38.5M loss 1.6853 gnorm 0.43 16030 tok/s peak 5.47 GiB
+[main_standard] step 2400/3051 tok 39.3M loss 1.6812 gnorm 0.42 16033 tok/s peak 5.47 GiB
+[main_standard] step 2450/3051 tok 40.1M loss 1.6685 gnorm 0.42 16036 tok/s peak 5.47 GiB
+[main_standard] step 2500/3051 tok 41.0M loss 1.6447 gnorm 0.42 16040 tok/s peak 5.47 GiB
+[main_standard] step 2550/3051 tok 41.8M loss 1.6696 gnorm 0.42 16043 tok/s peak 5.47 GiB
+[main_standard] step 2600/3051 tok 42.6M loss 1.6517 gnorm 0.42 16046 tok/s peak 5.47 GiB
+[main_standard] step 2650/3051 tok 43.4M loss 1.6511 gnorm 0.40 16048 tok/s peak 5.47 GiB
+[main_standard] step 2700/3051 tok 44.2M loss 1.6541 gnorm 0.44 16051 tok/s peak 5.47 GiB
+[main_standard] step 2750/3051 tok 45.1M loss 1.6335 gnorm 0.41 16054 tok/s peak 5.47 GiB
+[main_standard] step 2800/3051 tok 45.9M loss 1.6124 gnorm 0.41 16056 tok/s peak 5.47 GiB
+[main_standard] step 2850/3051 tok 46.7M loss 1.6321 gnorm 0.41 16059 tok/s peak 5.47 GiB
+[main_standard] step 2900/3051 tok 47.5M loss 1.6119 gnorm 0.43 16061 tok/s peak 5.47 GiB
+[main_standard] step 2950/3051 tok 48.3M loss 1.6240 gnorm 0.42 16063 tok/s peak 5.47 GiB
+[main_standard] step 3000/3051 tok 49.2M loss 1.6150 gnorm 0.40 16065 tok/s peak 5.47 GiB
+[main_standard] step 3050/3051 tok 50.0M loss 1.6147 gnorm 0.43 16068 tok/s peak 5.47 GiB
+[main_standard] step 3051/3051 tok 50.0M loss 1.5491 gnorm 0.41 16068 tok/s peak 5.47 GiB
+[main_midpoint_rev] step 50/3051 tok 0.8M loss 5.8897 gnorm 0.79 13117 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 100/3051 tok 1.6M loss 3.9433 gnorm 0.67 13110 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 150/3051 tok 2.5M loss 3.4991 gnorm 0.94 13113 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 200/3051 tok 3.3M loss 3.1843 gnorm 0.85 13114 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 250/3051 tok 4.1M loss 2.9637 gnorm 0.85 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 300/3051 tok 4.9M loss 2.8371 gnorm 0.73 13114 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 350/3051 tok 5.7M loss 2.7271 gnorm 0.76 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 400/3051 tok 6.6M loss 2.6222 gnorm 0.68 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 450/3051 tok 7.4M loss 2.5439 gnorm 0.64 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 500/3051 tok 8.2M loss 2.4795 gnorm 0.62 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 550/3051 tok 9.0M loss 2.4168 gnorm 0.63 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 600/3051 tok 9.8M loss 2.3872 gnorm 0.72 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 650/3051 tok 10.6M loss 2.3358 gnorm 0.63 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 700/3051 tok 11.5M loss 2.2861 gnorm 0.61 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 750/3051 tok 12.3M loss 2.2478 gnorm 0.57 13116 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 800/3051 tok 13.1M loss 2.2179 gnorm 0.61 13116 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 850/3051 tok 13.9M loss 2.2002 gnorm 0.59 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 900/3051 tok 14.7M loss 2.1711 gnorm 0.56 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 950/3051 tok 15.6M loss 2.1491 gnorm 0.56 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1000/3051 tok 16.4M loss 2.1192 gnorm 0.54 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1050/3051 tok 17.2M loss 2.0763 gnorm 0.55 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1100/3051 tok 18.0M loss 2.0695 gnorm 0.52 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1150/3051 tok 18.8M loss 2.0396 gnorm 0.53 13116 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1200/3051 tok 19.7M loss 2.0301 gnorm 0.49 13116 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1250/3051 tok 20.5M loss 2.0084 gnorm 0.51 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1300/3051 tok 21.3M loss 1.9883 gnorm 0.54 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1350/3051 tok 22.1M loss 1.9730 gnorm 0.52 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1400/3051 tok 22.9M loss 1.9582 gnorm 0.49 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1450/3051 tok 23.8M loss 1.9405 gnorm 0.48 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1500/3051 tok 24.6M loss 1.9223 gnorm 0.48 13115 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1550/3051 tok 25.4M loss 1.9076 gnorm 0.47 13099 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1600/3051 tok 26.2M loss 1.9001 gnorm 0.47 13095 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1650/3051 tok 27.0M loss 1.8792 gnorm 0.48 13094 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1700/3051 tok 27.9M loss 1.8880 gnorm 0.47 13094 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1750/3051 tok 28.7M loss 1.8592 gnorm 0.47 13094 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1800/3051 tok 29.5M loss 1.8305 gnorm 0.46 13094 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1850/3051 tok 30.3M loss 1.8271 gnorm 0.46 13094 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1900/3051 tok 31.1M loss 1.8147 gnorm 0.49 13091 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 1950/3051 tok 31.9M loss 1.8279 gnorm 0.45 13089 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2000/3051 tok 32.8M loss 1.8138 gnorm 0.46 13089 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2050/3051 tok 33.6M loss 1.7712 gnorm 0.47 13088 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2100/3051 tok 34.4M loss 1.7809 gnorm 0.48 13085 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2150/3051 tok 35.2M loss 1.7749 gnorm 0.47 13085 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2200/3051 tok 36.0M loss 1.7583 gnorm 0.47 13083 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2250/3051 tok 36.9M loss 1.7509 gnorm 0.46 13083 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2300/3051 tok 37.7M loss 1.7413 gnorm 0.46 13082 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2350/3051 tok 38.5M loss 1.7361 gnorm 0.47 13075 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2400/3051 tok 39.3M loss 1.7322 gnorm 0.47 13072 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2450/3051 tok 40.1M loss 1.7190 gnorm 0.47 13070 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2500/3051 tok 41.0M loss 1.6931 gnorm 0.45 13068 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2550/3051 tok 41.8M loss 1.7188 gnorm 0.47 13068 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2600/3051 tok 42.6M loss 1.7026 gnorm 0.46 13069 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2650/3051 tok 43.4M loss 1.7001 gnorm 0.44 13069 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2700/3051 tok 44.2M loss 1.7049 gnorm 0.48 13069 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2750/3051 tok 45.1M loss 1.6834 gnorm 0.45 13069 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2800/3051 tok 45.9M loss 1.6625 gnorm 0.46 13069 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2850/3051 tok 46.7M loss 1.6803 gnorm 0.45 13069 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2900/3051 tok 47.5M loss 1.6612 gnorm 0.46 13068 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 2950/3051 tok 48.3M loss 1.6740 gnorm 0.47 13067 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 3000/3051 tok 49.2M loss 1.6639 gnorm 0.45 13067 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 3050/3051 tok 50.0M loss 1.6641 gnorm 0.46 13067 tok/s peak 1.06 GiB
+[main_midpoint_rev] step 3051/3051 tok 50.0M loss 1.5984 gnorm 0.44 13067 tok/s peak 1.06 GiB
+[main_euler_rev] step 50/3051 tok 0.8M loss 6.1460 gnorm 0.85 13424 tok/s peak 0.97 GiB
+[main_euler_rev] step 100/3051 tok 1.6M loss 3.9870 gnorm 0.48 13431 tok/s peak 0.97 GiB
+[main_euler_rev] step 150/3051 tok 2.5M loss 3.5282 gnorm 0.78 13440 tok/s peak 0.97 GiB
+[main_euler_rev] step 200/3051 tok 3.3M loss 3.1929 gnorm 0.67 13439 tok/s peak 0.97 GiB
+[main_euler_rev] step 250/3051 tok 4.1M loss 2.9407 gnorm 0.75 13438 tok/s peak 0.97 GiB
+[main_euler_rev] step 300/3051 tok 4.9M loss 2.8003 gnorm 0.76 13438 tok/s peak 0.97 GiB
+[main_euler_rev] step 350/3051 tok 5.7M loss 2.6834 gnorm 0.70 13440 tok/s peak 0.97 GiB
+[main_euler_rev] step 400/3051 tok 6.6M loss 2.5720 gnorm 0.74 13441 tok/s peak 0.97 GiB
+[main_euler_rev] step 450/3051 tok 7.4M loss 2.4984 gnorm 0.67 13439 tok/s peak 0.97 GiB
+[main_euler_rev] step 500/3051 tok 8.2M loss 2.4339 gnorm 0.59 13438 tok/s peak 0.97 GiB
+[main_euler_rev] step 550/3051 tok 9.0M loss 2.3738 gnorm 0.53 13440 tok/s peak 0.97 GiB
+[main_euler_rev] step 600/3051 tok 9.8M loss 2.3470 gnorm 0.59 13440 tok/s peak 0.97 GiB
+[main_euler_rev] step 650/3051 tok 10.6M loss 2.2978 gnorm 0.53 13438 tok/s peak 0.97 GiB
+[main_euler_rev] step 700/3051 tok 11.5M loss 2.2512 gnorm 0.54 13439 tok/s peak 0.97 GiB
+[main_euler_rev] step 750/3051 tok 12.3M loss 2.2134 gnorm 0.56 13431 tok/s peak 0.97 GiB
+[main_euler_rev] step 800/3051 tok 13.1M loss 2.1844 gnorm 0.55 13420 tok/s peak 0.97 GiB
+[main_euler_rev] step 850/3051 tok 13.9M loss 2.1691 gnorm 0.54 13411 tok/s peak 0.97 GiB
+[main_euler_rev] step 900/3051 tok 14.7M loss 2.1406 gnorm 0.48 13397 tok/s peak 0.97 GiB
+[main_euler_rev] step 950/3051 tok 15.6M loss 2.1221 gnorm 0.49 13389 tok/s peak 0.97 GiB
+[main_euler_rev] step 1000/3051 tok 16.4M loss 2.0904 gnorm 0.52 13383 tok/s peak 0.97 GiB
+[main_euler_rev] step 1050/3051 tok 17.2M loss 2.0498 gnorm 0.50 13386 tok/s peak 0.97 GiB
+[main_euler_rev] step 1100/3051 tok 18.0M loss 2.0460 gnorm 0.45 13385 tok/s peak 0.97 GiB
+[main_euler_rev] step 1150/3051 tok 18.8M loss 2.0160 gnorm 0.47 13381 tok/s peak 0.97 GiB
+[main_euler_rev] step 1200/3051 tok 19.7M loss 2.0041 gnorm 0.46 13381 tok/s peak 0.97 GiB
+[main_euler_rev] step 1250/3051 tok 20.5M loss 1.9876 gnorm 0.45 13374 tok/s peak 0.97 GiB
+[main_euler_rev] step 1300/3051 tok 21.3M loss 1.9668 gnorm 0.48 13367 tok/s peak 0.97 GiB
+[main_euler_rev] step 1350/3051 tok 22.1M loss 1.9496 gnorm 0.46 13366 tok/s peak 0.97 GiB
+[main_euler_rev] step 1400/3051 tok 22.9M loss 1.9367 gnorm 0.47 13367 tok/s peak 0.97 GiB
+[main_euler_rev] step 1450/3051 tok 23.8M loss 1.9179 gnorm 0.46 13368 tok/s peak 0.97 GiB
+[main_euler_rev] step 1500/3051 tok 24.6M loss 1.9029 gnorm 0.42 13370 tok/s peak 0.97 GiB
+[main_euler_rev] step 1550/3051 tok 25.4M loss 1.8892 gnorm 0.44 13372 tok/s peak 0.97 GiB
+[main_euler_rev] step 1600/3051 tok 26.2M loss 1.8803 gnorm 0.44 13374 tok/s peak 0.97 GiB
+[main_euler_rev] step 1650/3051 tok 27.0M loss 1.8585 gnorm 0.45 13375 tok/s peak 0.97 GiB
+[main_euler_rev] step 1700/3051 tok 27.9M loss 1.8659 gnorm 0.43 13377 tok/s peak 0.97 GiB
+[main_euler_rev] step 1750/3051 tok 28.7M loss 1.8419 gnorm 0.44 13378 tok/s peak 0.97 GiB
+[main_euler_rev] step 1800/3051 tok 29.5M loss 1.8140 gnorm 0.46 13380 tok/s peak 0.97 GiB
+[main_euler_rev] step 1850/3051 tok 30.3M loss 1.8086 gnorm 0.45 13382 tok/s peak 0.97 GiB
+[main_euler_rev] step 1900/3051 tok 31.1M loss 1.7977 gnorm 0.46 13383 tok/s peak 0.97 GiB
+[main_euler_rev] step 1950/3051 tok 31.9M loss 1.8108 gnorm 0.42 13385 tok/s peak 0.97 GiB
+[main_euler_rev] step 2000/3051 tok 32.8M loss 1.7965 gnorm 0.44 13387 tok/s peak 0.97 GiB
+[main_euler_rev] step 2050/3051 tok 33.6M loss 1.7554 gnorm 0.45 13386 tok/s peak 0.97 GiB
+[main_euler_rev] step 2100/3051 tok 34.4M loss 1.7638 gnorm 0.46 13386 tok/s peak 0.97 GiB
+[main_euler_rev] step 2150/3051 tok 35.2M loss 1.7597 gnorm 0.44 13373 tok/s peak 0.97 GiB
+[main_euler_rev] step 2200/3051 tok 36.0M loss 1.7434 gnorm 0.44 13359 tok/s peak 0.97 GiB
+[main_euler_rev] step 2250/3051 tok 36.9M loss 1.7346 gnorm 0.44 13341 tok/s peak 0.97 GiB
+[main_euler_rev] step 2300/3051 tok 37.7M loss 1.7267 gnorm 0.43 13325 tok/s peak 0.97 GiB
+[main_euler_rev] step 2350/3051 tok 38.5M loss 1.7206 gnorm 0.47 13311 tok/s peak 0.97 GiB
+[main_euler_rev] step 2400/3051 tok 39.3M loss 1.7171 gnorm 0.44 13297 tok/s peak 0.97 GiB
+[main_euler_rev] step 2450/3051 tok 40.1M loss 1.7049 gnorm 0.44 13282 tok/s peak 0.97 GiB
+[main_euler_rev] step 2500/3051 tok 41.0M loss 1.6798 gnorm 0.44 13270 tok/s peak 0.97 GiB
+[main_euler_rev] step 2550/3051 tok 41.8M loss 1.7060 gnorm 0.44 13269 tok/s peak 0.97 GiB
+[main_euler_rev] step 2600/3051 tok 42.6M loss 1.6889 gnorm 0.45 13268 tok/s peak 0.97 GiB
+[main_euler_rev] step 2650/3051 tok 43.4M loss 1.6873 gnorm 0.42 13265 tok/s peak 0.97 GiB
+[main_euler_rev] step 2700/3051 tok 44.2M loss 1.6895 gnorm 0.46 13264 tok/s peak 0.97 GiB
+[main_euler_rev] step 2750/3051 tok 45.1M loss 1.6708 gnorm 0.44 13264 tok/s peak 0.97 GiB
+[main_euler_rev] step 2800/3051 tok 45.9M loss 1.6480 gnorm 0.43 13263 tok/s peak 0.97 GiB
+[main_euler_rev] step 2850/3051 tok 46.7M loss 1.6663 gnorm 0.44 13262 tok/s peak 0.97 GiB
+[main_euler_rev] step 2900/3051 tok 47.5M loss 1.6473 gnorm 0.45 13252 tok/s peak 0.97 GiB
+[main_euler_rev] step 2950/3051 tok 48.3M loss 1.6606 gnorm 0.45 13249 tok/s peak 0.97 GiB
+[main_euler_rev] step 3000/3051 tok 49.2M loss 1.6493 gnorm 0.44 13248 tok/s peak 0.97 GiB
+[main_euler_rev] step 3050/3051 tok 50.0M loss 1.6514 gnorm 0.44 13244 tok/s peak 0.97 GiB
+[main_euler_rev] step 3051/3051 tok 50.0M loss 1.5906 gnorm 0.44 13244 tok/s peak 0.97 GiB
+max batch, reversible euler
+  batch 256: 2.94 GiB
+  batch 64: 0.97 GiB
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/pradeep/AL/ERAv5/s13/rev/experiments.py", line 136, in <module>
+    {"sweep": sweep, "main": main_runs, "maxbatch": maxbatch}[s]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/pradeep/AL/ERAv5/s13/rev/experiments.py", line 121, in maxbatch
+    search["reversible"] = max_batch(rev)
+                           ~~~~~~~~~^^^^^
+  File "/Users/pradeep/AL/ERAv5/s13/rev/experiments.py", line 103, in max_batch
+    while peak(b) > budget:
+          ~~~~^^^
+  File "/Users/pradeep/AL/ERAv5/s13/rev/experiments.py", line 96, in peak
+    probes[b] = measure_peak(replace(cfg, batch=b))
+                ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pradeep/AL/ERAv5/s13/rev/train.py", line 158, in measure_peak
+    train_step(model, opt, x, y, cfg, dev)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pradeep/AL/ERAv5/s13/rev/train.py", line 138, in train_step
+    loss.backward()
+    ~~~~~~~~~~~~~^^
+  File "/Users/pradeep/AL/ERAv5/s13/.venv/lib/python3.13/site-packages/torch/_tensor.py", line 623, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/pradeep/AL/ERAv5/s13/.venv/lib/python3.13/site-packages/torch/autograd/__init__.py", line 395, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/pradeep/AL/ERAv5/s13/.venv/lib/python3.13/site-packages/torch/autograd/graph.py", line 1072, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+RuntimeError: MPS backend out of memory (MPS allocated: 25.65 GiB, other allocations: 11.51 GiB, max allowed: 42.43 GiB). Tried to allocate 11.50 GiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

@@ -1,0 +1,94 @@
+main_euler_rev.json: 0.97 -> 1.88 GiB
+main_midpoint_rev.json: 1.06 -> 1.85 GiB
+main_standard.json: 5.47 -> 6.47 GiB
+sweep_euler_h0.5.json: 5.47 -> 6.47 GiB
+sweep_euler_h1.0.json: 5.47 -> 6.47 GiB
+sweep_midpoint_h0.125.json: 5.47 -> 6.47 GiB
+sweep_midpoint_h0.25.json: 5.47 -> 6.47 GiB
+sweep_midpoint_h0.25_blend0.5.json: 5.47 -> 6.47 GiB
+sweep_midpoint_h0.5.json: 5.47 -> 6.47 GiB
+sweep_midpoint_h1.0.json: 5.47 -> 6.47 GiB
+sweep_standard.json: 5.47 -> 6.47 GiB
+max batch, reversible euler
+  batch 256: 6.80 GiB
+  batch 64: 1.88 GiB
+  batch 576: 15.00 GiB
+  batch 640: 16.65 GiB
+max batch, standard
+  batch 256: 25.18 GiB
+  batch 64: 6.47 GiB
+  batch 128: 12.71 GiB
+  batch 192: 18.95 GiB
+max batch, same rule with activations stored
+  batch 256: 25.18 GiB
+  batch 64: 6.47 GiB
+  batch 128: 12.71 GiB
+  batch 192: 18.95 GiB
+[maxbatch_euler_rev] step 5/339 tok 0.7M loss 7.8840 gnorm 1.66 3582 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 10/339 tok 1.5M loss 8.0381 gnorm 3.48 3418 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 15/339 tok 2.2M loss 5.9524 gnorm 0.75 3275 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 20/339 tok 2.9M loss 5.6608 gnorm 0.74 3227 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 25/339 tok 3.7M loss 5.5042 gnorm 0.46 3206 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 30/339 tok 4.4M loss 5.4034 gnorm 0.32 3169 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 35/339 tok 5.2M loss 5.3122 gnorm 0.32 3102 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 40/339 tok 5.9M loss 5.2129 gnorm 0.22 3118 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 45/339 tok 6.6M loss 5.1436 gnorm 1.18 3101 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 50/339 tok 7.4M loss 5.0349 gnorm 0.40 3098 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 55/339 tok 8.1M loss 4.9587 gnorm 0.95 3060 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 60/339 tok 8.8M loss 4.8971 gnorm 0.45 3063 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 65/339 tok 9.6M loss 4.8388 gnorm 0.31 3062 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 70/339 tok 10.3M loss 4.7822 gnorm 0.43 3070 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 75/339 tok 11.1M loss 4.7239 gnorm 0.20 3076 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 80/339 tok 11.8M loss 4.6541 gnorm 0.21 3071 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 85/339 tok 12.5M loss 4.6233 gnorm 0.24 3073 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 90/339 tok 13.3M loss 4.5849 gnorm 0.28 3086 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 95/339 tok 14.0M loss 4.5808 gnorm 0.54 3101 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 100/339 tok 14.7M loss 4.5160 gnorm 0.23 3108 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 105/339 tok 15.5M loss 4.4824 gnorm 0.28 3115 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 110/339 tok 16.2M loss 4.4434 gnorm 0.47 3115 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 115/339 tok 17.0M loss 4.3881 gnorm 0.20 3122 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 120/339 tok 17.7M loss 4.3502 gnorm 0.18 3125 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 125/339 tok 18.4M loss 4.3192 gnorm 0.23 3133 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 130/339 tok 19.2M loss 4.2857 gnorm 0.20 3137 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 135/339 tok 19.9M loss 4.2930 gnorm 0.34 3135 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 140/339 tok 20.6M loss 4.2788 gnorm 0.23 3141 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 145/339 tok 21.4M loss 4.2377 gnorm 0.21 3140 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 150/339 tok 22.1M loss 4.2260 gnorm 0.63 3141 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 155/339 tok 22.9M loss 4.2618 gnorm 0.37 3140 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 160/339 tok 23.6M loss 4.2257 gnorm 0.26 3144 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 165/339 tok 24.3M loss 4.2038 gnorm 0.21 3146 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 170/339 tok 25.1M loss 4.1688 gnorm 0.17 3148 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 175/339 tok 25.8M loss 4.1487 gnorm 0.14 3146 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 180/339 tok 26.5M loss 4.1368 gnorm 47.64 3142 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 185/339 tok 27.3M loss 4.1900 gnorm 0.45 3146 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 190/339 tok 28.0M loss 4.1705 gnorm 0.32 3147 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 195/339 tok 28.8M loss 4.1309 gnorm 0.20 3152 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 200/339 tok 29.5M loss 4.0918 gnorm 0.26 3158 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 205/339 tok 30.2M loss 4.0888 gnorm 95458008.00 3084 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 210/339 tok 31.0M loss 4.2176 gnorm 0.44 3073 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 215/339 tok 31.7M loss 4.1547 gnorm 0.33 3077 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 220/339 tok 32.4M loss 4.1386 gnorm 0.23 3081 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 225/339 tok 33.2M loss 4.0941 gnorm 0.19 3088 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 230/339 tok 33.9M loss 4.0731 gnorm 0.24 3097 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 235/339 tok 34.7M loss 4.0628 gnorm 0.14 3104 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 240/339 tok 35.4M loss 4.0443 gnorm 0.14 3107 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 245/339 tok 36.1M loss 4.0330 gnorm 0.11 3114 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 250/339 tok 36.9M loss 4.0277 gnorm 0.12 3119 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 255/339 tok 37.6M loss 4.0164 gnorm 0.12 3130 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 260/339 tok 38.3M loss 4.0013 gnorm 0.14 3140 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 265/339 tok 39.1M loss 3.9960 gnorm 0.12 3149 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 270/339 tok 39.8M loss 3.9855 gnorm 0.13 3156 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 275/339 tok 40.6M loss 3.9645 gnorm 0.11 3164 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 280/339 tok 41.3M loss 3.9578 gnorm 0.20 3176 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 285/339 tok 42.0M loss 3.9624 gnorm 0.15 3196 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 290/339 tok 42.8M loss 3.9581 gnorm 0.13 3217 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 295/339 tok 43.5M loss 3.9464 gnorm 0.12 3239 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 300/339 tok 44.2M loss 3.9430 gnorm 0.13 3260 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 305/339 tok 45.0M loss 3.9284 gnorm 0.12 3281 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 310/339 tok 45.7M loss 3.9119 gnorm 0.13 3301 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 315/339 tok 46.4M loss 3.9129 gnorm 0.12 3318 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 320/339 tok 47.2M loss 3.8941 gnorm 0.12 3338 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 325/339 tok 47.9M loss 3.8997 gnorm 0.15 3358 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 330/339 tok 48.7M loss 3.8851 gnorm 0.13 3378 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 335/339 tok 49.4M loss 3.8875 gnorm 0.12 3398 tok/s peak 15.00 GiB
+[maxbatch_euler_rev] step 339/339 tok 50.0M loss 3.8900 gnorm 0.13 3413 tok/s peak 15.00 GiB
