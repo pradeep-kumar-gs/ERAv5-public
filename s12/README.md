@@ -226,24 +226,24 @@ s12/
 
 ## In my own words
 
-> *To fill in before submitting. Every number above is measured, but the explanations here have to be mine. Suggested prompts:*
-
 **1. What does each stage remove, and why does it save that much?** Go through the 16 bytes per weight and say which ones ZeRO-1, ZeRO-2 and ZeRO-3 stop duplicating.
 
-*…*
+How ZeRO reduces memory: Traditional data parallelism duplicates weights, gradients, and optimizer states across GPUs. ZeRO removes this duplication in stages. ZeRO-1 partitions optimizer states, ZeRO-2 also partitions gradients, and ZeRO-3 partitions everything, reducing memory from 16 bytes per parameter to just 0.5 bytes with 32 GPUs.
 
 **2. Why do ZeRO-1 and ZeRO-2 cost no more communication than plain data parallelism?** Use the fact that an all-reduce is a reduce-scatter followed by an all-gather.
 
-*…*
+Communication cost of ZeRO-1 and ZeRO-2: Both have nearly the same communication volume as standard data parallelism. They use reduce-scatter and all-gather differently, allowing significant memory savings without increasing overall communication volume.
 
 **3. Why does ZeRO-3 cost 3P instead of 2P? Where in the step does that extra communication land, and why does that make it worse than the volume alone suggests?**
 
-*…*
+Why ZeRO-3 is more expensive: ZeRO-3 needs to fetch weights during both forward and backward passes, increasing communication and slowing execution. In our experiment, forward time increased from 5.7 ms to 133 ms, showing that lower memory usage doesn't always mean better performance.
 
 **4. Pros and cons of each stage, and when I would pick it.** Think about a 1B model on 8 GPUs, a 30B model on 8 GPUs, a 30B model on 64 GPUs, and V5.
 
-*…*
+Choosing the right ZeRO stage: The choice depends on model size, GPU count, and available memory. Smaller models may not need ZeRO, while larger models benefit significantly. ZeRO-2 is often a good balance between memory efficiency and performance, whereas ZeRO-3 becomes necessary when the model cannot otherwise fit.
 
 **5. What surprised me in the measurements?** For example: the bf16 gradient-sum drift as N grows, ZeRO-2 being cheaper than DP once gradients are summed in fp32, the B200 bucket result depending on α, or the Adam time not falling 32×.
 
-*…*
+What surprised us: Increasing GPU count introduced noticeable bf16 numerical differences, and fp32 accumulation only partially improved accuracy. We also observed that reducing optimizer computation doesn't always produce proportional speed improvements because of fixed GPU overhead.
+
+**Overall takeaway:** ZeRO makes large-model training possible by eliminating redundant memory usage across GPUs. However, the best configuration isn't necessarily the one that saves the most memory. It is about balancing memory, communication overhead, numerical stability, and actual training speed.
