@@ -285,29 +285,30 @@ On CUDA the same code runs unchanged (`device()` picks CUDA). `Peak` also reads 
 
 ## In my own words
 
-*(To be written by me, not the agent.)*
 
 1. **Why can a standard residual block not be run backwards, and what exactly do the midpoint rule and the Euler
    coupling change so that it can?**
 
-   _…_
+   Why reversible blocks work: Standard neural network blocks need to store earlier activations for backpropagation. Midpoint and Euler coupling methods allow us to reconstruct previous states mathematically, without storing them.
 
 2. **The reversible model still stores two states. What are they, and why is that enough to rebuild every layer?
    Why does depth stop mattering?**
 
-   _…_
+   Memory savings: Reversible networks only need the last two states to reconstruct earlier activations. This means activation memory stays almost constant as network depth increases, unlike standard models.
 
 3. **Reversibility cut my peak 3.5× at batch 64, but only allowed 4.5× the batch, not 10×. Where did the memory go,
    and what fixed it?**
 
-   _…_
+   Memory isn't the only bottleneck: We achieved a 3.5× memory reduction, but batch size improved only 4.5× because the loss computation consumed most of the memory. Chunking the loss increased batch capacity to 11×.
 
 4. **My max-batch run had 4.5× the batch but a far worse loss and lower speed. Which part of that is reversibility,
    which part is the optimizer, and which part is my hardware?**
 
-   _…_
+   Larger batches don't always mean faster training: Reversibility helped larger batches fit into memory, but optimizer behaviour, gradient instability, and hardware limitations affected actual training performance.
 
 5. **When would I *not* use reversibility? Think about the 20% compute cost, bf16 drift, dropout, the blend
    coefficient, and what ZeRO (Session 12) already divides.**
 
-   _…_
+   When reversibility makes sense: It is useful when activation memory is the main constraint, especially in deeper networks. However, it introduces around 20% additional computation and requires careful handling of numerical precision, dropout, and stability.
+
+**Overall takeaway:** Reversibility is an effective way to reduce activation memory, but it doesn't automatically make training faster. The real benefit depends on where the memory bottleneck is and how well the optimizer and hardware handle larger batches.
