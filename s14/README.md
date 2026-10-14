@@ -60,7 +60,7 @@ Active parameters per token are the same for all three, so they cost the same to
 
 ## 2. They kept training and reduced loss
 
-- **Copy started where the dense model was but learned slowest.** After 1.5M tokens it had gained only 0.006, while the dense run gained 0.043. With 8 identical experts, the router gradient has nothing to tell them apart. The experts only diverge through the order in which they receive tokens, and that takes time.
+- **Copy started where the dense model was but learned slowest.** After 1.5M tokens it had gained only 0.006, while the dense run gained 0.043. With 8 identical experts, the router gradient has nothing to tell them apart. The experts only diverge through the order in which they receive tokens, and that takes time. Even at the end they had barely separated. The mean pairwise cosine similarity of the expert weights was 0.717 for copy at 30M, against 0.237 for drop, 0.072 for partition and 0.033 for the MoE from scratch.
 - **Drop paid 0.47 at conversion and had recovered within 1.5M tokens** (2.15). It caught up with copy by 24M (1.980 vs 1.984) and finished ahead of it (1.7105 vs 1.7178). The redrawn halves give the experts a reason to differ from step one.
 - **Partition was level with or ahead of dense at every evaluation from 24M** (1.935 vs 1.937, 1.830 vs 1.830 at 27M, 1.724 vs 1.731 at 30M on the 20-batch evals). It keeps the whole dense FFN as a shared expert, so every token still has the original function. The routed experts start from different halves of the neurons, so they are different from the start.
 
@@ -180,20 +180,22 @@ Each finished run is cached in `results/<name>.json` and skipped on the next inv
 
 1. **Why is copy upcycling exactly the dense model at step 0, and why did that make it the slowest learner afterwards?**
 
-
+   **Copying experts:** Copying the same model into multiple experts doesn't help much because they all behave similarly. This makes learning slower and adds extra overhead.
 
 2. **Partition was the only conversion that beat staying dense. What does keeping the dense FFN as a shared expert give it that copy and drop don't have?**
 
-
+   **Partitioning worked better:** Keeping the original model while creating different experts helped preserve what was already learned and improve performance.
 
 3. **Growing 8 → 32 by cloning cost 0.045 the moment it happened. Why does top-2 over clone families change the function, and what would you change to avoid it?**
 
-
+   **Adding more experts isn't always better:** Increasing experts from 8 to 32 actually increased the loss because the router kept selecting similar experts. We need a better routing approach when adding experts.
 
 4. **The scratch MoE groups tokens by type; the upcycled one mostly keeps runs of consecutive tokens on the same expert. Why might upcycling lead to that?**
 
-
+   **Experts learn differently:** Models trained from scratch learned to group similar types of tokens, while upcycled models focused more on the surrounding context. How we start training affects what experts learn.
 
 5. **If you had a fixed budget of compute, when would you upcycle and when would you train an MoE from scratch? Use the PFLOP numbers above.**
 
+   **Upcycling vs training from scratch:** Upcycling is useful when we already have a trained model and want to save compute. Training from scratch costs more but gave better results in our experiment.
 
+**Overall takeaway:** More experts don't automatically mean a better model. How we create, train, and route experts matters more. Upcycling can save compute, but training from scratch may give better results when resources are available.
