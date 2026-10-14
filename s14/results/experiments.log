@@ -1,0 +1,179 @@
+[dense] tok 0.8M loss 5.8670 lr 1.23e-03 16275 tok/s
+[dense] tok 1.6M loss 3.9525 lr 1.50e-03 15830 tok/s
+[dense] tok 2.5M loss 3.5049 lr 1.50e-03 15257 tok/s
+[dense] tok 3.3M loss 3.1828 lr 1.50e-03 14972 tok/s
+[dense] tok 4.1M loss 2.9555 lr 1.50e-03 14809 tok/s
+[dense] tok 4.9M loss 2.8222 lr 1.50e-03 14924 tok/s
+[dense] tok 5.7M loss 2.7031 lr 1.50e-03 15093 tok/s
+[dense] tok 6.6M loss 2.5883 lr 1.50e-03 15235 tok/s
+[dense] tok 7.4M loss 2.5107 lr 1.50e-03 15349 tok/s
+[dense] tok 8.2M loss 2.4411 lr 1.50e-03 15441 tok/s
+[dense] tok 9.0M loss 2.3766 lr 1.50e-03 15517 tok/s
+[dense] tok 9.8M loss 2.3497 lr 1.50e-03 15581 tok/s
+[dense] tok 10.6M loss 2.2959 lr 1.50e-03 15636 tok/s
+[dense] tok 11.5M loss 2.2474 lr 1.50e-03 15683 tok/s
+[dense] tok 12.3M loss 2.2071 lr 1.50e-03 15724 tok/s
+[dense] tok 13.1M loss 2.1783 lr 1.50e-03 15760 tok/s
+[dense] tok 13.9M loss 2.1611 lr 1.50e-03 15792 tok/s
+[dense] tok 14.7M loss 2.1341 lr 1.50e-03 15821 tok/s
+[dense] tok 15.6M loss 2.1144 lr 1.50e-03 15846 tok/s
+[dense] tok 16.4M loss 2.0879 lr 1.50e-03 15869 tok/s
+[dense] tok 17.2M loss 2.0496 lr 1.50e-03 15890 tok/s
+[dense] tok 18.0M loss 2.0422 lr 1.50e-03 15910 tok/s
+[dense] tok 18.8M loss 2.0159 lr 1.50e-03 15927 tok/s
+[dense] tok 19.7M loss 2.0083 lr 1.50e-03 15943 tok/s
+[dense] tok 20.5M loss 1.9908 lr 1.50e-03 15958 tok/s
+[dense] tok 21.3M loss 1.9748 lr 1.50e-03 15972 tok/s
+[dense] tok 22.1M loss 1.9626 lr 1.50e-03 15985 tok/s
+[dense] tok 22.9M loss 1.9502 lr 1.50e-03 15996 tok/s
+[dense] tok 23.8M loss 1.9354 lr 1.50e-03 16007 tok/s
+[dense] tok 24.6M loss 1.9196 lr 1.37e-03 16017 tok/s
+[dense] tok 25.4M loss 1.8918 lr 1.19e-03 16027 tok/s
+[dense] tok 26.2M loss 1.8666 lr 1.01e-03 16036 tok/s
+[dense] tok 27.0M loss 1.8268 lr 8.21e-04 16045 tok/s
+[dense] tok 27.9M loss 1.8137 lr 6.37e-04 16047 tok/s
+[dense] tok 28.7M loss 1.7734 lr 4.52e-04 16035 tok/s
+[dense] tok 29.5M loss 1.7289 lr 2.68e-04 16027 tok/s
+[dense] tok 30.0M loss 1.7076 lr 1.54e-04 16021 tok/s
+[moe_copy] tok 15.8M loss 2.0837 lr 1.50e-03 3702 tok/s maxvio 1.27 dead 0
+[moe_copy] tok 16.6M loss 2.1121 lr 1.50e-03 1350 tok/s maxvio 2.84 dead 2
+[dense] cached
+[moe_copy] tok 15.8M loss 2.0833 lr 1.50e-03 6595 tok/s maxvio 2.00 dead 0
+[moe_copy] tok 16.6M loss 2.1112 lr 1.50e-03 6553 tok/s maxvio 2.73 dead 0
+[moe_copy] tok 17.4M loss 2.0824 lr 1.50e-03 6522 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 18.3M loss 2.0674 lr 1.50e-03 6491 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 19.1M loss 2.0480 lr 1.50e-03 6483 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 19.9M loss 2.0359 lr 1.50e-03 6488 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 20.7M loss 2.0346 lr 1.50e-03 6503 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 21.5M loss 2.0239 lr 1.50e-03 6518 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 22.4M loss 1.9962 lr 1.50e-03 6534 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 23.2M loss 1.9893 lr 1.50e-03 6546 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 24.0M loss 1.9842 lr 1.50e-03 6564 tok/s maxvio 3.00 dead 0
+[moe_copy] tok 24.8M loss 1.9539 lr 1.32e-03 6590 tok/s maxvio 2.87 dead 0
+[moe_copy] tok 25.6M loss 1.9309 lr 1.13e-03 6617 tok/s maxvio 1.14 dead 0
+[moe_copy] tok 26.5M loss 1.8987 lr 9.50e-04 6639 tok/s maxvio 1.89 dead 1
+[moe_copy] tok 27.3M loss 1.8548 lr 7.66e-04 6656 tok/s maxvio 0.92 dead 0
+[moe_copy] tok 28.1M loss 1.8342 lr 5.82e-04 6661 tok/s maxvio 0.53 dead 0
+[moe_copy] tok 28.9M loss 1.7797 lr 3.97e-04 6675 tok/s maxvio 0.34 dead 0
+[moe_copy] tok 29.7M loss 1.7376 lr 2.13e-04 6692 tok/s maxvio 0.34 dead 0
+[moe_copy] tok 30.0M loss 1.7093 lr 1.54e-04 6697 tok/s maxvio 0.40 dead 0
+[moe_drop] tok 15.8M loss 2.2285 lr 1.50e-03 6540 tok/s maxvio 2.66 dead 0
+[moe_drop] tok 16.6M loss 2.1727 lr 1.50e-03 6582 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 17.4M loss 2.1234 lr 1.50e-03 6614 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 18.3M loss 2.1019 lr 1.50e-03 6638 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 19.1M loss 2.0765 lr 1.50e-03 6659 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 19.9M loss 2.0540 lr 1.50e-03 6674 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 20.7M loss 2.0419 lr 1.50e-03 6692 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 21.5M loss 2.0309 lr 1.50e-03 6712 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 22.4M loss 1.9977 lr 1.50e-03 6729 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 23.2M loss 1.9872 lr 1.50e-03 6742 tok/s maxvio 3.00 dead 0
+[moe_drop] tok 24.0M loss 1.9797 lr 1.50e-03 6753 tok/s maxvio 2.82 dead 0
+[moe_drop] tok 24.8M loss 1.9445 lr 1.32e-03 6766 tok/s maxvio 2.11 dead 0
+[moe_drop] tok 25.6M loss 1.9171 lr 1.13e-03 6777 tok/s maxvio 0.58 dead 0
+[moe_drop] tok 26.5M loss 1.8886 lr 9.50e-04 6795 tok/s maxvio 0.38 dead 1
+[moe_drop] tok 27.3M loss 1.8457 lr 7.66e-04 6814 tok/s maxvio 0.64 dead 1
+[moe_drop] tok 28.1M loss 1.8250 lr 5.82e-04 6831 tok/s maxvio 0.80 dead 0
+[moe_drop] tok 28.9M loss 1.7721 lr 3.97e-04 6846 tok/s maxvio 0.98 dead 0
+[moe_drop] tok 29.7M loss 1.7296 lr 2.13e-04 6862 tok/s maxvio 0.36 dead 0
+[moe_drop] tok 30.0M loss 1.7014 lr 1.54e-04 6867 tok/s maxvio 0.40 dead 0
+[moe_partition] tok 15.8M loss 2.0956 lr 1.50e-03 7083 tok/s maxvio 1.09 dead 0
+[moe_partition] tok 16.6M loss 2.1010 lr 1.50e-03 6994 tok/s maxvio 2.66 dead 1
+[moe_partition] tok 17.4M loss 2.0653 lr 1.50e-03 6961 tok/s maxvio 2.85 dead 1
+[moe_partition] tok 18.3M loss 2.0506 lr 1.50e-03 6961 tok/s maxvio 2.94 dead 1
+[moe_partition] tok 19.1M loss 2.0316 lr 1.50e-03 6981 tok/s maxvio 3.00 dead 0
+[moe_partition] tok 19.9M loss 2.0107 lr 1.50e-03 6993 tok/s maxvio 3.00 dead 0
+[moe_partition] tok 20.7M loss 2.0003 lr 1.50e-03 7007 tok/s maxvio 3.00 dead 1
+[moe_partition] tok 21.5M loss 1.9902 lr 1.50e-03 7030 tok/s maxvio 3.00 dead 0
+[moe_partition] tok 22.4M loss 1.9574 lr 1.50e-03 7045 tok/s maxvio 3.00 dead 1
+[moe_partition] tok 23.2M loss 1.9494 lr 1.50e-03 7060 tok/s maxvio 3.00 dead 1
+[moe_partition] tok 24.0M loss 1.9435 lr 1.50e-03 7082 tok/s maxvio 3.00 dead 1
+[moe_partition] tok 24.8M loss 1.9066 lr 1.32e-03 7105 tok/s maxvio 3.00 dead 0
+[moe_partition] tok 25.6M loss 1.8835 lr 1.13e-03 7129 tok/s maxvio 3.00 dead 0
+[moe_partition] tok 26.5M loss 1.8590 lr 9.50e-04 7140 tok/s maxvio 2.15 dead 0
+[moe_partition] tok 27.3M loss 1.8214 lr 7.66e-04 7156 tok/s maxvio 0.58 dead 0
+[moe_partition] tok 28.1M loss 1.8031 lr 5.82e-04 7175 tok/s maxvio 0.50 dead 0
+[moe_partition] tok 28.9M loss 1.7529 lr 3.97e-04 7188 tok/s maxvio 0.58 dead 0
+[moe_partition] tok 29.7M loss 1.7144 lr 2.13e-04 7206 tok/s maxvio 0.42 dead 0
+[moe_partition] tok 30.0M loss 1.6887 lr 1.54e-04 7211 tok/s maxvio 0.52 dead 0
+[grow_hard] tok 24.4M loss 1.8986 lr 1.16e-03 4480 tok/s maxvio 8.08 dead 24
+[grow_hard] tok 24.8M loss 1.9061 lr 1.32e-03 4613 tok/s maxvio 7.21 dead 20
+[grow_hard] tok 25.2M loss 1.9274 lr 1.23e-03 4625 tok/s maxvio 8.38 dead 21
+[grow_hard] tok 25.6M loss 1.8831 lr 1.14e-03 4608 tok/s maxvio 5.67 dead 19
+[grow_hard] tok 26.0M loss 1.8925 lr 1.05e-03 4615 tok/s maxvio 2.44 dead 14
+[grow_hard] tok 26.4M loss 1.8646 lr 9.54e-04 4629 tok/s maxvio 2.84 dead 12
+[grow_hard] tok 26.9M loss 1.8419 lr 8.62e-04 4640 tok/s maxvio 2.99 dead 13
+[grow_hard] tok 27.3M loss 1.8235 lr 7.70e-04 4635 tok/s maxvio 2.25 dead 8
+[grow_hard] tok 27.7M loss 1.8401 lr 6.77e-04 4618 tok/s maxvio 3.60 dead 8
+[grow_hard] tok 28.1M loss 1.8030 lr 5.85e-04 4621 tok/s maxvio 1.54 dead 8
+[grow_hard] tok 28.5M loss 1.7758 lr 4.93e-04 4618 tok/s maxvio 1.89 dead 8
+[grow_hard] tok 28.9M loss 1.7582 lr 4.01e-04 4619 tok/s maxvio 2.04 dead 8
+[grow_hard] tok 29.3M loss 1.7351 lr 3.09e-04 4621 tok/s maxvio 2.08 dead 8
+[grow_hard] tok 29.7M loss 1.7161 lr 2.17e-04 4626 tok/s maxvio 1.88 dead 8
+[grow_hard] tok 30.0M loss 1.7032 lr 1.54e-04 4630 tok/s maxvio 2.32 dead 8
+[grow_sample] tok 24.4M loss 1.8859 lr 1.16e-03 4676 tok/s maxvio 7.53 dead 0
+[grow_sample] tok 24.8M loss 1.9059 lr 1.32e-03 4755 tok/s maxvio 7.34 dead 0
+[grow_sample] tok 25.2M loss 1.9308 lr 1.23e-03 4768 tok/s maxvio 10.85 dead 0
+[grow_sample] tok 25.6M loss 1.8946 lr 1.14e-03 4769 tok/s maxvio 5.99 dead 0
+[grow_sample] tok 26.0M loss 1.9046 lr 1.05e-03 4738 tok/s maxvio 14.68 dead 25
+[grow_sample] tok 26.4M loss 1.8729 lr 9.54e-04 4718 tok/s maxvio 14.64 dead 23
+[grow_sample] tok 26.9M loss 1.8473 lr 8.62e-04 4687 tok/s maxvio 14.43 dead 19
+[grow_sample] tok 27.3M loss 1.8276 lr 7.70e-04 4668 tok/s maxvio 13.67 dead 16
+[grow_sample] tok 27.7M loss 1.8436 lr 6.77e-04 4649 tok/s maxvio 13.13 dead 13
+[grow_sample] tok 28.1M loss 1.8079 lr 5.85e-04 4651 tok/s maxvio 10.11 dead 11
+[grow_sample] tok 28.5M loss 1.7808 lr 4.93e-04 4658 tok/s maxvio 6.19 dead 10
+[grow_sample] tok 28.9M loss 1.7619 lr 4.01e-04 4647 tok/s maxvio 3.60 dead 9
+[grow_sample] tok 29.3M loss 1.7394 lr 3.09e-04 4638 tok/s maxvio 2.96 dead 7
+[grow_sample] tok 29.7M loss 1.7209 lr 2.17e-04 4636 tok/s maxvio 1.86 dead 7
+[grow_sample] tok 30.0M loss 1.7083 lr 1.54e-04 4643 tok/s maxvio 2.44 dead 6
+[grow_redraw] tok 24.4M loss 1.8991 lr 1.16e-03 4583 tok/s maxvio 12.59 dead 23
+[grow_redraw] tok 24.8M loss 1.9089 lr 1.32e-03 4620 tok/s maxvio 14.66 dead 24
+[grow_redraw] tok 25.2M loss 1.9335 lr 1.23e-03 4597 tok/s maxvio 14.82 dead 26
+[grow_redraw] tok 25.6M loss 1.8886 lr 1.14e-03 4590 tok/s maxvio 14.56 dead 23
+[grow_redraw] tok 26.0M loss 1.8969 lr 1.05e-03 4599 tok/s maxvio 13.77 dead 19
+[grow_redraw] tok 26.4M loss 1.8743 lr 9.54e-04 4605 tok/s maxvio 13.81 dead 16
+[grow_redraw] tok 26.9M loss 1.8513 lr 8.62e-04 4625 tok/s maxvio 12.05 dead 13
+[grow_redraw] tok 27.3M loss 1.8336 lr 7.70e-04 4650 tok/s maxvio 10.56 dead 14
+[grow_redraw] tok 27.7M loss 1.8491 lr 6.77e-04 4672 tok/s maxvio 6.59 dead 12
+[grow_redraw] tok 28.1M loss 1.8107 lr 5.85e-04 4690 tok/s maxvio 4.80 dead 12
+[grow_redraw] tok 28.5M loss 1.7842 lr 4.93e-04 4705 tok/s maxvio 1.69 dead 8
+[grow_redraw] tok 28.9M loss 1.7649 lr 4.01e-04 4709 tok/s maxvio 1.94 dead 8
+[grow_redraw] tok 29.3M loss 1.7410 lr 3.09e-04 4709 tok/s maxvio 6.34 dead 8
+[grow_redraw] tok 29.7M loss 1.7226 lr 2.17e-04 4711 tok/s maxvio 4.23 dead 8
+[grow_redraw] tok 30.0M loss 1.7094 lr 1.54e-04 4711 tok/s maxvio 2.38 dead 8
+[moe_scratch] tok 0.8M loss 5.8684 lr 1.23e-03 6661 tok/s maxvio 2.84 dead 0
+[moe_scratch] tok 1.6M loss 3.9303 lr 1.50e-03 6728 tok/s maxvio 2.82 dead 0
+[moe_scratch] tok 2.5M loss 3.4972 lr 1.50e-03 6826 tok/s maxvio 2.61 dead 0
+[moe_scratch] tok 3.3M loss 3.1646 lr 1.50e-03 6909 tok/s maxvio 2.19 dead 0
+[moe_scratch] tok 4.1M loss 2.9281 lr 1.50e-03 6967 tok/s maxvio 1.95 dead 0
+[moe_scratch] tok 4.9M loss 2.7863 lr 1.50e-03 6994 tok/s maxvio 1.62 dead 0
+[moe_scratch] tok 5.7M loss 2.6691 lr 1.50e-03 7022 tok/s maxvio 1.06 dead 0
+[moe_scratch] tok 6.6M loss 2.5535 lr 1.50e-03 7040 tok/s maxvio 0.39 dead 0
+[moe_scratch] tok 7.4M loss 2.4752 lr 1.50e-03 7052 tok/s maxvio 0.21 dead 0
+[moe_scratch] tok 8.2M loss 2.4117 lr 1.50e-03 7066 tok/s maxvio 0.34 dead 0
+[moe_scratch] tok 9.0M loss 2.3478 lr 1.50e-03 7074 tok/s maxvio 0.34 dead 0
+[moe_scratch] tok 9.8M loss 2.3188 lr 1.50e-03 7077 tok/s maxvio 0.35 dead 0
+[moe_scratch] tok 10.6M loss 2.2692 lr 1.50e-03 7081 tok/s maxvio 0.42 dead 0
+[moe_scratch] tok 11.5M loss 2.2218 lr 1.50e-03 7091 tok/s maxvio 0.33 dead 0
+[moe_scratch] tok 12.3M loss 2.1826 lr 1.50e-03 7099 tok/s maxvio 0.29 dead 0
+[moe_scratch] tok 13.1M loss 2.1533 lr 1.50e-03 7106 tok/s maxvio 0.28 dead 0
+[moe_scratch] tok 13.9M loss 2.1373 lr 1.50e-03 7110 tok/s maxvio 0.26 dead 0
+[moe_scratch] tok 14.7M loss 2.1130 lr 1.50e-03 7119 tok/s maxvio 0.13 dead 0
+[moe_scratch] tok 15.6M loss 2.0948 lr 1.50e-03 7129 tok/s maxvio 0.08 dead 0
+[moe_scratch] tok 16.4M loss 2.0669 lr 1.50e-03 7139 tok/s maxvio 0.04 dead 0
+[moe_scratch] tok 17.2M loss 2.0286 lr 1.50e-03 7148 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 18.0M loss 2.0243 lr 1.50e-03 7154 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 18.8M loss 1.9952 lr 1.50e-03 7162 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 19.7M loss 1.9870 lr 1.50e-03 7169 tok/s maxvio 0.07 dead 0
+[moe_scratch] tok 20.5M loss 1.9720 lr 1.50e-03 7175 tok/s maxvio 0.07 dead 0
+[moe_scratch] tok 21.3M loss 1.9559 lr 1.50e-03 7180 tok/s maxvio 0.08 dead 0
+[moe_scratch] tok 22.1M loss 1.9404 lr 1.50e-03 7175 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 22.9M loss 1.9274 lr 1.50e-03 7174 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 23.8M loss 1.9143 lr 1.50e-03 7173 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 24.6M loss 1.8972 lr 1.37e-03 7173 tok/s maxvio 0.06 dead 0
+[moe_scratch] tok 25.4M loss 1.8708 lr 1.19e-03 7171 tok/s maxvio 0.04 dead 0
+[moe_scratch] tok 26.2M loss 1.8428 lr 1.01e-03 7168 tok/s maxvio 0.04 dead 0
+[moe_scratch] tok 27.0M loss 1.8026 lr 8.21e-04 7164 tok/s maxvio 0.03 dead 0
+[moe_scratch] tok 27.9M loss 1.7915 lr 6.37e-04 7164 tok/s maxvio 0.05 dead 0
+[moe_scratch] tok 28.7M loss 1.7488 lr 4.52e-04 7160 tok/s maxvio 0.07 dead 0
+[moe_scratch] tok 29.5M loss 1.7026 lr 2.68e-04 7132 tok/s maxvio 0.02 dead 0
+[moe_scratch] tok 30.0M loss 1.6822 lr 1.54e-04 7119 tok/s maxvio 0.04 dead 0
